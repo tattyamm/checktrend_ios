@@ -7,6 +7,10 @@
 //
 
 /*
+llibrary
+http://vdeep.net/xcode63-cocoapods-alamofire-swiftyjson
+
+
 http://qiita.com/tsumekoara/items/7293c54762afeeb10ed5
 のようにgoogleajax経由dedouda?
 
