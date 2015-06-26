@@ -20,6 +20,10 @@ http://qiita.com/yukihamada/items/9b0067f905418105a2c6
 
 import UIKit
 
+import Alamofire
+import SwiftyJSON
+import Alamofire_SwiftyJSON
+
 class TabViewControllerBase: UIViewController {
     var tabTitle: String = ""
     
@@ -32,7 +36,9 @@ class TabViewControllerBase: UIViewController {
         
         setUp()
         
-        connection()
+       // connection()
+        
+        connection2()
     }
     
     func setUp() {
@@ -68,6 +74,25 @@ class TabViewControllerBase: UIViewController {
         var myData:NSString = NSString(data: data!, encoding: NSUTF8StringEncoding)!
         println(myData)
         
+    }
+    
+    func connection2() {
+        Alamofire.request(.GET, "http://checktrend.herokuapp.com/api/trend/google.json", parameters: ["foo": "bar"])
+            .responseSwiftyJSON({ (request, response, json, error) in
+                println(json)
+                for (key: String, subJson: JSON) in json {
+                    // keyにはJSONのキーが設定されている。
+//                    println(subJson["items"])
+                    for (key: String, subsubJson: JSON) in subJson["items"] {
+                        println(subsubJson["title"])
+                        
+                    }
+
+                    
+                }
+                
+                println(error)
+            })
     }
     
 }
