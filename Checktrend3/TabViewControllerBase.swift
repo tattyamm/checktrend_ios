@@ -29,6 +29,7 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
     var tabTitle: String = ""
     
     private var myItems: NSMutableArray = []//["TEST1", "TEST2", "TEST3"]
+    private var myUrls: NSMutableArray = []
     private var myTableView: UITableView!
     
     override func viewDidLoad() {
@@ -84,19 +85,26 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
     
     func connection2() {
         var tmpItems:NSMutableArray = []
+        var tmpUrls:NSMutableArray = []
         
         Alamofire.request(.GET, "http://checktrend.herokuapp.com/api/trend/google.json", parameters: ["foo": "bar"])
             .responseSwiftyJSON({ (request, response, json, error) in
 //              println(json)
                 for (key: String, subJson: JSON) in json {
                     for (key: String, subsubJson: JSON) in subJson["items"] {
+                        
+                        //TODO クラス作る
                         println(subsubJson["title"])
-                        tmpItems.addObject(subsubJson["title"].string!)
+                        println(subsubJson["url"])
+                        println(subsubJson["description"])
+                        tmpItems.addObject(subsubJson["title"].string!) //要素がないとアプリが落ちる
+                        tmpUrls.addObject(subsubJson["link"].string!)
                     }
                 }
                 
                 println(tmpItems)
                 self.myItems = tmpItems
+                self.myUrls = tmpUrls
                 self.reloadTable()
                 
                 println(error)
@@ -132,6 +140,7 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("Num: \(indexPath.row)")
         println("Value: \(myItems[indexPath.row])")
+        println("Url: \(myUrls[indexPath.row])")
     }
     
     /*
@@ -153,7 +162,7 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
         
         // Cellに値を設定する.
         cell.textLabel!.text = "\(myItems[indexPath.row])"
-        
+
         return cell
     }
     
