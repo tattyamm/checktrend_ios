@@ -27,11 +27,16 @@ class MainTabBarController: UITabBarController {
         secondView.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Bookmarks, tag: 2)
         tabView1.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Bookmarks, tag: 3)
         
+        //navbar
+        var firstNavigationController = UINavigationController(rootViewController: firstView)
+        var secondNavigationController = UINavigationController(rootViewController: secondView)
+        var navigationController1 = UINavigationController(rootViewController: tabView1)
+        self.setViewControllers([firstNavigationController, secondNavigationController, navigationController1], animated: false)
+
         // タブで表示するViewControllerを配列に格納します。
-        let myTabs = NSArray(objects: firstView!, secondView!, tabView1!)
-        
+        //let myTabs = NSArray(objects: firstView!, secondView!, tabView1!)
         // 配列をTabにセットします。
-        self.setViewControllers(myTabs as [AnyObject], animated: false)
+//        self.setViewControllers(myTabs as [AnyObject], animated: false)
     }
     
     override func didReceiveMemoryWarning() {

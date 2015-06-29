@@ -17,6 +17,7 @@
 		AEAF1E231B350FDB0035AD28 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF1E221B350FDB0035AD28 /* MainTabBarController.swift */; };
 		AEAF1E5D1B36F18D0035AD28 /* TabViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF1E5C1B36F18D0035AD28 /* TabViewController1.swift */; };
 		AEAF1E5F1B36F8A40035AD28 /* TabViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF1E5E1B36F8A40035AD28 /* TabViewControllerBase.swift */; };
+		AEF62C521B3FAF76000BB1DC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF62C511B3FAF76000BB1DC /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		AEAF1E221B350FDB0035AD28 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		AEAF1E5C1B36F18D0035AD28 /* TabViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController1.swift; sourceTree = "<group>"; };
 		AEAF1E5E1B36F8A40035AD28 /* TabViewControllerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewControllerBase.swift; sourceTree = "<group>"; };
+		AEF62C511B3FAF76000BB1DC /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B730EF05F65290F921538FCE /* Pods-Checktrend3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checktrend3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Checktrend3/Pods-Checktrend3.debug.xcconfig"; sourceTree = "<group>"; };
 		B9A5E219B55F7E721D52468C /* Pods_Checktrend3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Checktrend3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 				AEAF1E0B1B35047A0035AD28 /* LaunchScreen.xib */,
 				AEAF1DFE1B3504780035AD28 /* Supporting Files */,
 				AEAF1E221B350FDB0035AD28 /* MainTabBarController.swift */,
+				AEF62C511B3FAF76000BB1DC /* WebViewController.swift */,
 			);
 			path = Checktrend3;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				AEAF1E5D1B36F18D0035AD28 /* TabViewController1.swift in Sources */,
 				AEAF1E011B3504780035AD28 /* AppDelegate.swift in Sources */,
 				AEAF1E5F1B36F8A40035AD28 /* TabViewControllerBase.swift in Sources */,
+				AEF62C521B3FAF76000BB1DC /* WebViewController.swift in Sources */,
 				AEAF1E231B350FDB0035AD28 /* MainTabBarController.swift in Sources */,
 				AEAF1E031B3504780035AD28 /* FirstViewController.swift in Sources */,
 			);

@@ -16,6 +16,11 @@ http://qiita.com/tsumekoara/items/7293c54762afeeb10ed5
 
 http://qiita.com/yukihamada/items/9b0067f905418105a2c6
 
+https://sites.google.com/a/gclue.jp/swift-docs/ni-yinki100-ios/uikit/uibarbuttonitemno-she-zhi
+
+navigationbar
+http://qiita.com/mochizukikotaro/items/f053495eb130e92e13e8
+
 */
 
 import UIKit
@@ -32,6 +37,9 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
     private var myUrls: NSMutableArray = []
     private var myTableView: UITableView!
     
+     var addBtn: UIBarButtonItem!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -41,11 +49,22 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
         
         setUp()
         
+        //tabbar設定
+        self.title = tabTitle
+        addBtn = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "onClick")
+        self.navigationItem.rightBarButtonItem = addBtn
+        
        // connection()
         
         connection2()
         
         showList()
+    }
+    
+    //tabbarボタンを押したとき
+    func onClick() {
+        let second = WebViewController()
+        self.navigationController?.pushViewController(second, animated: true)
     }
     
     func setUp() {
@@ -92,17 +111,12 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
 //              println(json)
                 for (key: String, subJson: JSON) in json {
                     for (key: String, subsubJson: JSON) in subJson["items"] {
-                        
                         //TODO クラス作る
-                        println(subsubJson["title"])
-                        println(subsubJson["url"])
-                        println(subsubJson["description"])
                         tmpItems.addObject(subsubJson["title"].string!) //要素がないとアプリが落ちる
                         tmpUrls.addObject(subsubJson["link"].string!)
                     }
                 }
-                
-                println(tmpItems)
+
                 self.myItems = tmpItems
                 self.myUrls = tmpUrls
                 self.reloadTable()
@@ -141,6 +155,13 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
         println("Num: \(indexPath.row)")
         println("Value: \(myItems[indexPath.row])")
         println("Url: \(myUrls[indexPath.row])")
+        
+        // 遷移するViewを定義する.
+        let myWebViewController: UIViewController = WebViewController()
+        // アニメーションを設定する.
+        myWebViewController.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
+        // Viewの移動する.
+        self.presentViewController(myWebViewController, animated: true, completion: nil)
     }
     
     /*
