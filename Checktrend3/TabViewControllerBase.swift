@@ -43,7 +43,7 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+
         //青色の画面を表示
         self.view.backgroundColor = UIColor.yellowColor()
         
@@ -157,11 +157,14 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
         println("Url: \(myUrls[indexPath.row])")
         
         // 遷移するViewを定義する.
-        let myWebViewController: UIViewController = WebViewController()
+//        let myWebViewController: UIViewController = WebViewController()
         // アニメーションを設定する.
-        myWebViewController.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
+//        myWebViewController.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
         // Viewの移動する.
-        self.presentViewController(myWebViewController, animated: true, completion: nil)
+//        self.presentViewController(myWebViewController, animated: true, completion: nil)
+        
+        let second = WebViewController()
+        self.navigationController?.pushViewController(second, animated: true)
     }
     
     /*
