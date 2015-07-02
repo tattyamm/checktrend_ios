@@ -164,6 +164,8 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
 //        self.presentViewController(myWebViewController, animated: true, completion: nil)
         
         let second = WebViewController()
+        second.startUrl = myUrls[indexPath.row] as! String
+        second.viewTitle = myItems[indexPath.row] as! String
         self.navigationController?.pushViewController(second, animated: true)
     }
     
