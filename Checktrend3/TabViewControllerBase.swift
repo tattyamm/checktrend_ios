@@ -1,11 +1,3 @@
-//
-//  TabViewControllerBase.swift
-//  Checktrend3
-//
-//  Created by tatsuya endo on 2015/06/21.
-//  Copyright (c) 2015年 tattyamm. All rights reserved.
-//
-
 /*
 llibrary
 http://vdeep.net/xcode63-cocoapods-alamofire-swiftyjson
@@ -32,56 +24,47 @@ import Alamofire_SwiftyJSON
 
 class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var tabTitle: String = ""
+    var tabUrl: String = ""
     
-    private var myItems: NSMutableArray = []//["TEST1", "TEST2", "TEST3"]
+    private var myItems: NSMutableArray = []
     private var myUrls: NSMutableArray = []
     private var myTableView: UITableView!
     
-     var addBtn: UIBarButtonItem!
+    var addBtn: UIBarButtonItem!
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
-        //青色の画面を表示
-        self.view.backgroundColor = UIColor.yellowColor()
+        self.view.backgroundColor = UIColor.greenColor()
         
         setUp()
         
         //tabbar設定
         self.title = tabTitle
-        addBtn = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "onClick")
-        self.navigationItem.rightBarButtonItem = addBtn
+        //tabbar上のボタン。あとで画像にする？
+        addBtn = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "onClickNavBarButton")
+        self.navigationItem.leftBarButtonItem = addBtn
         
-       // connection()
-        
-        connection2()
+        connection()
         
         showList()
     }
     
     //tabbarボタンを押したとき
-    func onClick() {
+    //TODO アプリのinfoっぽい内容にする
+    func onClickNavBarButton() {
         let second = WebViewController()
         self.navigationController?.pushViewController(second, animated: true)
     }
     
     func setUp() {
         tabTitle = ""
+        tabUrl = ""
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func connection() {
-        var myUrl:NSURL = NSURL(string:"http://checktrend.herokuapp.com/api/trend/google.json")!
-        // リクエストを生成.
-        var myRequest:NSURLRequest  = NSURLRequest(URL: myUrl)
-        // 送信処理を始める.
-        NSURLConnection.sendAsynchronousRequest(myRequest, queue: NSOperationQueue.mainQueue(), completionHandler: self.connectionDidFinished)
     }
     
     func connectionDidFinished(res: NSURLResponse?, data: NSData?, error: NSError?) {
@@ -102,11 +85,12 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
         
     }
     
-    func connection2() {
+    func connection() {
         var tmpItems:NSMutableArray = []
         var tmpUrls:NSMutableArray = []
         
-        Alamofire.request(.GET, "http://checktrend.herokuapp.com/api/trend/google.json", parameters: ["foo": "bar"])
+        println(tabUrl)
+        Alamofire.request(.GET, tabUrl, parameters: ["foo": "bar"])
             .responseSwiftyJSON({ (request, response, json, error) in
 //              println(json)
                 for (key: String, subJson: JSON) in json {
@@ -131,62 +115,36 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
         let displayWidth: CGFloat = self.view.frame.width
         let displayHeight: CGFloat = self.view.frame.height
         
-        // TableViewの生成する(status barの高さ分ずらして表示).
+        // TableViewの生成 (status bar分を引く)
         myTableView = UITableView(frame: CGRect(x: 0, y: barHeight, width: displayWidth, height: displayHeight - barHeight))
         
-        // Cell名の登録をおこなう.
         myTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
-        
-        // DataSourceの設定をする.
         myTableView.dataSource = self
-        
-        // Delegateを設定する.
         myTableView.delegate = self
-        
-        // Viewに追加する.
         self.view.addSubview(myTableView)
     }
     
     
-    /*
-    Cellが選択された際に呼び出されるデリゲートメソッド.
-    */
+    //Cellが選択された時
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("Num: \(indexPath.row)")
         println("Value: \(myItems[indexPath.row])")
         println("Url: \(myUrls[indexPath.row])")
-        
-        // 遷移するViewを定義する.
-//        let myWebViewController: UIViewController = WebViewController()
-        // アニメーションを設定する.
-//        myWebViewController.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
-        // Viewの移動する.
-//        self.presentViewController(myWebViewController, animated: true, completion: nil)
         
         let second = WebViewController()
         second.startUrl = myUrls[indexPath.row] as! String
         second.viewTitle = myItems[indexPath.row] as! String
         self.navigationController?.pushViewController(second, animated: true)
     }
-    
-    /*
-    Cellの総数を返すデータソースメソッド.
-    (実装必須)
-    */
+
+    //Cell総数
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myItems.count
     }
     
-    /*
-    Cellに値を設定するデータソースメソッド.
-    (実装必須)
-    */
+    //Cellへの値のセット
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        // 再利用するCellを取得する.
         let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! UITableViewCell
-        
-        // Cellに値を設定する.
         cell.textLabel!.text = "\(myItems[indexPath.row])"
 
         return cell

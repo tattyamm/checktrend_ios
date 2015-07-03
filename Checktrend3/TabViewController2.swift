@@ -1,6 +1,6 @@
 import UIKit
 
-class TabViewController1: TabViewControllerBase {
+class TabViewController2: TabViewControllerBase {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,8 +17,8 @@ class TabViewController1: TabViewControllerBase {
     }
     
     override func setUp() {
-        tabTitle = "Google"
-        tabUrl = "http://checktrend.herokuapp.com/api/trend/google.json"
+        tabTitle = "Yahoo"
+        tabUrl = "http://checktrend.herokuapp.com/api/trend/yahoo.json"
     }
     
 }
