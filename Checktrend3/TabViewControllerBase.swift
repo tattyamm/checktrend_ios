@@ -25,9 +25,11 @@ import Alamofire_SwiftyJSON
 class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var tabTitle: String = ""
     var tabUrl: String = ""
+    let TableViewCellIdentifier:String = "MyCell"
     
     private var myItems: NSMutableArray = []
     private var myUrls: NSMutableArray = []
+    private var myDescriptions: NSMutableArray = []
     private var myTableView: UITableView!
     
     var addBtn: UIBarButtonItem!
@@ -88,6 +90,7 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
     func connection() {
         var tmpItems:NSMutableArray = []
         var tmpUrls:NSMutableArray = []
+        var tmpDescriptions:NSMutableArray = []
         
         println(tabUrl)
         Alamofire.request(.GET, tabUrl, parameters: ["foo": "bar"])
@@ -98,11 +101,14 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
                         //TODO クラス作る
                         tmpItems.addObject(subsubJson["title"].string!) //要素がないとアプリが落ちる
                         tmpUrls.addObject(subsubJson["link"].string!)
+                        tmpDescriptions.addObject(subsubJson["description"].string!)
                     }
                 }
 
                 self.myItems = tmpItems
                 self.myUrls = tmpUrls
+                self.myDescriptions = tmpDescriptions
+println(self.myDescriptions)
                 self.reloadTable()
                 
                 println(error)
@@ -118,7 +124,7 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
         // TableViewの生成 (status bar分を引く)
         myTableView = UITableView(frame: CGRect(x: 0, y: barHeight, width: displayWidth, height: displayHeight - barHeight))
         
-        myTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
+        myTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: TableViewCellIdentifier)
         myTableView.dataSource = self
         myTableView.delegate = self
         self.view.addSubview(myTableView)
@@ -144,8 +150,11 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
     
     //Cellへの値のセット
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! UITableViewCell
+        var cell:UITableViewCell = UITableViewCell(
+            style: UITableViewCellStyle.Subtitle,
+            reuseIdentifier:TableViewCellIdentifier )
         cell.textLabel!.text = "\(myItems[indexPath.row])"
+        cell.detailTextLabel!.text = "\(myDescriptions[indexPath.row])"
 
         return cell
     }
