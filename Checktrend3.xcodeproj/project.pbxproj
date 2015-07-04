@@ -39,6 +39,7 @@
 		AEE4153D1B4818A300C9AB0E /* icon_Y@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE415261B4818A300C9AB0E /* icon_Y@2x.png */; };
 		AEE4153E1B4818A300C9AB0E /* rotation_32.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE415271B4818A300C9AB0E /* rotation_32.png */; };
 		AEE4153F1B4818A300C9AB0E /* rotation_48.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE415281B4818A300C9AB0E /* rotation_48.png */; };
+		AEE415411B48386F00C9AB0E /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE415401B48386E00C9AB0E /* info.png */; };
 		AEF62C521B3FAF76000BB1DC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF62C511B3FAF76000BB1DC /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		AEE415261B4818A300C9AB0E /* icon_Y@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_Y@2x.png"; sourceTree = "<group>"; };
 		AEE415271B4818A300C9AB0E /* rotation_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotation_32.png; sourceTree = "<group>"; };
 		AEE415281B4818A300C9AB0E /* rotation_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotation_48.png; sourceTree = "<group>"; };
+		AEE415401B48386E00C9AB0E /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		AEF62C511B3FAF76000BB1DC /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B730EF05F65290F921538FCE /* Pods-Checktrend3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checktrend3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Checktrend3/Pods-Checktrend3.debug.xcconfig"; sourceTree = "<group>"; };
 		B9A5E219B55F7E721D52468C /* Pods_Checktrend3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Checktrend3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +191,7 @@
 				AEE415121B4818A300C9AB0E /* Default-568h@2x.png */,
 				AEE415131B4818A300C9AB0E /* Default.png */,
 				AEE415141B4818A300C9AB0E /* Default@2x.png */,
+				AEE415401B48386E00C9AB0E /* info.png */,
 				AEE415151B4818A300C9AB0E /* Icon-72.png */,
 				AEE415161B4818A300C9AB0E /* Icon-72@2x.png */,
 				AEE415171B4818A300C9AB0E /* Icon-Small-50.png */,
@@ -316,6 +319,7 @@
 				AEAF1E0A1B35047A0035AD28 /* Images.xcassets in Resources */,
 				AEE4152B1B4818A300C9AB0E /* Default@2x.png in Resources */,
 				AEE4153A1B4818A300C9AB0E /* icon_t.png in Resources */,
+				AEE415411B48386F00C9AB0E /* info.png in Resources */,
 				AEE415291B4818A300C9AB0E /* Default-568h@2x.png in Resources */,
 				AEE4152E1B4818A300C9AB0E /* Icon-Small-50.png in Resources */,
 				AEE4152A1B4818A300C9AB0E /* Default.png in Resources */,

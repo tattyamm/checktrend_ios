@@ -33,7 +33,7 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
     private var myDescriptions: NSMutableArray = []
     private var myTableView: UITableView!
     
-    var addBtn: UIBarButtonItem!
+    var infoButton: UIBarButtonItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,8 +46,17 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
         self.title = tabMainTitle
         self.tabBarItem.title = tabBarTitle
         //tabbar上のボタン。あとで画像にする？
-        addBtn = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "onClickNavBarButton")
-        self.navigationItem.leftBarButtonItem = addBtn
+        //infoButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "onClickNavBarButton")
+        //self.navigationItem.leftBarButtonItem = infoButton
+        
+        // 画像 http://www.pixeden.com/media-icons/tab-bar-icons-ios-7
+        var settingBtn:UIButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
+        settingBtn.addTarget(self, action: "onClickNavBarButton", forControlEvents: UIControlEvents.TouchUpInside)
+        settingBtn.frame = CGRectMake(0, 0, 24, 24)
+        settingBtn.setImage(UIImage(named: "Info.png"), forState: .Normal)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: settingBtn)
+        
+        
         
         connection()
         
