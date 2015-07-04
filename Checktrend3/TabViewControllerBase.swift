@@ -23,7 +23,8 @@ import Alamofire_SwiftyJSON
 
 
 class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var tabTitle: String = ""
+    var tabBarTitle: String = ""
+    var tabMainTitle: String = ""
     var tabUrl: String = ""
     let TableViewCellIdentifier:String = "MyCell"
     
@@ -42,7 +43,8 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
         setUp()
         
         //tabbar設定
-        self.title = tabTitle
+        self.title = tabMainTitle
+        self.tabBarItem.title = tabBarTitle
         //tabbar上のボタン。あとで画像にする？
         addBtn = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "onClickNavBarButton")
         self.navigationItem.leftBarButtonItem = addBtn
@@ -60,7 +62,8 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func setUp() {
-        tabTitle = ""
+        tabBarTitle = ""
+        tabMainTitle = ""
         tabUrl = ""
     }
     
@@ -108,7 +111,7 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
                 self.myItems = tmpItems
                 self.myUrls = tmpUrls
                 self.myDescriptions = tmpDescriptions
-println(self.myDescriptions)
+
                 self.reloadTable()
                 
                 println(error)

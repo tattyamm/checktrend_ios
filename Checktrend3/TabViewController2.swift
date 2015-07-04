@@ -6,8 +6,6 @@ class TabViewController2: TabViewControllerBase {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        println("tabTitle = " + tabTitle)
-        println("tabUrl = " + tabUrl)
         self.view.backgroundColor = UIColor.greenColor()
     }
     
@@ -17,7 +15,8 @@ class TabViewController2: TabViewControllerBase {
     }
     
     override func setUp() {
-        tabTitle = "Yahoo"
+        tabBarTitle = "Yahoo"
+        tabMainTitle = "Yahoo急上昇"
         tabUrl = "http://checktrend.herokuapp.com/api/trend/yahoo.json"
     }
     

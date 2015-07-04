@@ -4,15 +4,15 @@
 import UIKit
 
 class WebViewController: UIViewController,UIWebViewDelegate {
-    
+
     var startUrl:String = ""
     var viewTitle = ""
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.title = viewTitle  // webのタイトルにするか？
-        
+
         let myWebView : UIWebView = UIWebView()
         myWebView.delegate = self
         myWebView.frame = self.view.bounds

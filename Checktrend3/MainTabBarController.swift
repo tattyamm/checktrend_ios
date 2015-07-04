@@ -11,8 +11,10 @@ class MainTabBarController: UITabBarController {
         tabView1 = TabViewController1()
         tabView2 = TabViewController2()
 
-        tabView1.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Bookmarks, tag: 1)
-        tabView2.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Bookmarks, tag: 2)
+        //tabView1.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Bookmarks, tag: 1)
+        //tabView2.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Bookmarks, tag: 2)
+        tabView1.tabBarItem = UITabBarItem(title: "Google", image: UIImage(named: "icon_G.png"), selectedImage: UIImage(named: "icon_G.png"))
+        tabView2.tabBarItem = UITabBarItem(title: "Yahoo", image: UIImage(named: "icon_Y.png"), selectedImage: UIImage(named: "icon_Y.png"))
         
         //navbar
         var navigationController1 = UINavigationController(rootViewController: tabView1)
