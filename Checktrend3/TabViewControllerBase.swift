@@ -56,6 +56,11 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
         //settingBtn.setImage(UIImage(named: "Info.png"), forState: .Normal)
         //self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: settingBtn)
 
+        //戻るボタンを設定
+        let backButtonText = NSLocalizedString("BACK_BUTTON_TITLE", comment: "back")
+        let backButtonItem = UIBarButtonItem(title: backButtonText, style: .Plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backButtonItem
+        
         showList()
         connection()
     }

@@ -41,6 +41,8 @@
 		AEE4153F1B4818A300C9AB0E /* rotation_48.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE415281B4818A300C9AB0E /* rotation_48.png */; };
 		AEE415411B48386F00C9AB0E /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE415401B48386E00C9AB0E /* info.png */; };
 		AEE415451B48B8C000C9AB0E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEE415471B48B8C000C9AB0E /* Localizable.strings */; };
+		AEE4154C1B49593B00C9AB0E /* TabViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE4154B1B49593B00C9AB0E /* TabViewController3.swift */; };
+		AEE4154E1B49595000C9AB0E /* TabViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE4154D1B49595000C9AB0E /* TabViewController4.swift */; };
 		AEF62C521B3FAF76000BB1DC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF62C511B3FAF76000BB1DC /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +97,8 @@
 		AEE415421B48B80600C9AB0E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		AEE415461B48B8C000C9AB0E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AEE415481B48B8C800C9AB0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEE4154B1B49593B00C9AB0E /* TabViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController3.swift; sourceTree = "<group>"; };
+		AEE4154D1B49595000C9AB0E /* TabViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController4.swift; sourceTree = "<group>"; };
 		AEF62C511B3FAF76000BB1DC /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B730EF05F65290F921538FCE /* Pods-Checktrend3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checktrend3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Checktrend3/Pods-Checktrend3.debug.xcconfig"; sourceTree = "<group>"; };
 		B9A5E219B55F7E721D52468C /* Pods_Checktrend3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Checktrend3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +159,8 @@
 				AEAF1E5E1B36F8A40035AD28 /* TabViewControllerBase.swift */,
 				AEAF1E5C1B36F18D0035AD28 /* TabViewController1.swift */,
 				AEE4150F1B46E1F900C9AB0E /* TabViewController2.swift */,
+				AEE4154B1B49593B00C9AB0E /* TabViewController3.swift */,
+				AEE4154D1B49595000C9AB0E /* TabViewController4.swift */,
 				AEF62C511B3FAF76000BB1DC /* WebViewController.swift */,
 				AEAF1E091B35047A0035AD28 /* Images.xcassets */,
 				AEAF1E0B1B35047A0035AD28 /* LaunchScreen.xib */,
@@ -409,6 +415,8 @@
 				AEAF1E011B3504780035AD28 /* AppDelegate.swift in Sources */,
 				AEE415101B46E1F900C9AB0E /* TabViewController2.swift in Sources */,
 				AEAF1E5F1B36F8A40035AD28 /* TabViewControllerBase.swift in Sources */,
+				AEE4154C1B49593B00C9AB0E /* TabViewController3.swift in Sources */,
+				AEE4154E1B49595000C9AB0E /* TabViewController4.swift in Sources */,
 				AEF62C521B3FAF76000BB1DC /* WebViewController.swift in Sources */,
 				AEAF1E231B350FDB0035AD28 /* MainTabBarController.swift in Sources */,
 			);
