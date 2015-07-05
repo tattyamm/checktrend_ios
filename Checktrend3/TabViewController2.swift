@@ -16,8 +16,8 @@ class TabViewController2: TabViewControllerBase {
     
     override func setUp() {
         tabBarTitle = "Yahoo"
-        tabMainTitle = "Yahoo急上昇"
-        tabUrl = "http://checktrend.herokuapp.com/api/trend/yahoo.json"
+        tabMainTitle = NSLocalizedString("LANG_VIEW2_TITLE", comment: "text")
+        tabUrl = NSLocalizedString("LANG_VIEW2_URL", comment: "url")
     }
     
 }

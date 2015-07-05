@@ -40,6 +40,7 @@
 		AEE4153E1B4818A300C9AB0E /* rotation_32.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE415271B4818A300C9AB0E /* rotation_32.png */; };
 		AEE4153F1B4818A300C9AB0E /* rotation_48.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE415281B4818A300C9AB0E /* rotation_48.png */; };
 		AEE415411B48386F00C9AB0E /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE415401B48386E00C9AB0E /* info.png */; };
+		AEE415451B48B8C000C9AB0E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEE415471B48B8C000C9AB0E /* Localizable.strings */; };
 		AEF62C521B3FAF76000BB1DC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF62C511B3FAF76000BB1DC /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,9 @@
 		AEE415271B4818A300C9AB0E /* rotation_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotation_32.png; sourceTree = "<group>"; };
 		AEE415281B4818A300C9AB0E /* rotation_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotation_48.png; sourceTree = "<group>"; };
 		AEE415401B48386E00C9AB0E /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		AEE415421B48B80600C9AB0E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		AEE415461B48B8C000C9AB0E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AEE415481B48B8C800C9AB0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AEF62C511B3FAF76000BB1DC /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B730EF05F65290F921538FCE /* Pods-Checktrend3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checktrend3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Checktrend3/Pods-Checktrend3.debug.xcconfig"; sourceTree = "<group>"; };
 		B9A5E219B55F7E721D52468C /* Pods_Checktrend3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Checktrend3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +160,7 @@
 				AEAF1E0B1B35047A0035AD28 /* LaunchScreen.xib */,
 				AEE415111B4818A300C9AB0E /* Resources */,
 				AEAF1DFE1B3504780035AD28 /* Supporting Files */,
+				AEE415471B48B8C000C9AB0E /* Localizable.strings */,
 			);
 			path = Checktrend3;
 			sourceTree = "<group>";
@@ -312,6 +317,7 @@
 				AEE415321B4818A300C9AB0E /* Icon.png in Resources */,
 				AEE4153F1B4818A300C9AB0E /* rotation_48.png in Resources */,
 				AEE415391B4818A300C9AB0E /* icon_M@2x.png in Resources */,
+				AEE415451B48B8C000C9AB0E /* Localizable.strings in Resources */,
 				AEE415331B4818A300C9AB0E /* Icon@2x.png in Resources */,
 				AEE4152F1B4818A300C9AB0E /* Icon-Small-50@2x.png in Resources */,
 				AEE4152D1B4818A300C9AB0E /* Icon-72@2x.png in Resources */,
@@ -431,8 +437,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				AEAF1E0C1B35047A0035AD28 /* Base */,
+				AEE415421B48B80600C9AB0E /* ja */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		AEE415471B48B8C000C9AB0E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEE415461B48B8C000C9AB0E /* ja */,
+				AEE415481B48B8C800C9AB0E /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

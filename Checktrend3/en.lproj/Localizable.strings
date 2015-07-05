@@ -1,0 +1,22 @@
+
+"LANG_VIEW1_TITLE" = "GoogleTrends(every hours)";
+"LANG_VIEW1_URL" = "http://checktrend.herokuapp.com/api/trend/google.json";
+
+"LANG_VIEW2_TITLE" = "Yahoo! (almost every day)";
+"LANG_VIEW2_URL" = "http://checktrend.herokuapp.com/api/trend/yahoo.json";
+
+
+
+"LANG_VIEW3_TITLE" = "MSN (every week)";
+"LANG_VIEW3_URL" = "http://pipes.yahoo.com/pipes/pipe.run?_id=092d7c3104c07e5c3b14045ce3ad4fbe&_render=json";
+
+"LANG_VIEW4_TITLE" = "twitter trend";
+"LANG_VIEW4_URL" = "http://pipes.yahoo.com/pipes/pipe.run?_id=0c5444c47c42d067f13305f62e513624&_render=json";
+
+"LANG_VIEW5_TITLE" = "books (past 24 hours)";
+"LANG_VIEW5_URL" = "http://pipes.yahoo.com/pipes/pipe.run?_id=310e7ae37431b23346de1b2e7c7a3473&_render=json";
+
+"LANG_BUTTON_MENU" = "menu";
+"LANG_BUTTON_SHARE" = "share";
+
+"LANG_DIALOG_WEBERROR" = "Communication error";
