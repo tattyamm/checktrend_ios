@@ -62,7 +62,6 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
     
     //tabbarボタンを押したとき
     func onClickNavBarButton() {
-        //TODO tabbar分がずれる
         connection()
     }
     
