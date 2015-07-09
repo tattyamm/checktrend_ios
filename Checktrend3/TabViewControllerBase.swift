@@ -105,6 +105,9 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
         var tmpDescriptions:NSMutableArray = []
         
         println(tabUrl)
+        
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        
         Alamofire.request(.GET, tabUrl, parameters: ["foo": "bar"])
             .responseSwiftyJSON({ (request, response, json, error) in
 //              println(json)
@@ -124,6 +127,8 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
                 self.reloadTable()
                 
                 println(error)
+                
+                UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             })
     }
 
@@ -175,4 +180,8 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
         self.myTableView.reloadData()
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+    }
+
 }

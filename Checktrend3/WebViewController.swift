@@ -9,6 +9,7 @@ class WebViewController: UIViewController,UIWebViewDelegate, GADBannerViewDelega
     var startUrl:String = ""
     var viewTitle = ""
     let myWebView : UIWebView = UIWebView()
+    let ADMOB_ID = "ca-app-pub-5040713306305537/8685162711"
     
     var bannerView: GADBannerView!
 
@@ -16,10 +17,15 @@ class WebViewController: UIViewController,UIWebViewDelegate, GADBannerViewDelega
         super.viewDidLoad()
 
         self.title = viewTitle  // webのタイトルにするか？
+        self.view.backgroundColor = UIColor.whiteColor()
+        
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
 
         //webview
         myWebView.delegate = self
-        myWebView.frame = self.view.bounds
+        //myWebView.frame = self.view.bounds
+        var navBarHeight = (self.navigationController?.navigationBar.frame.size.height)!
+        myWebView.frame = CGRectMake(0, 0, self.view.bounds.width, self.view.bounds.height - navBarHeight)
         self.view.addSubview(myWebView)
         let url: NSURL = NSURL(string: startUrl)!
         let request: NSURLRequest = NSURLRequest(URL: url)
@@ -44,7 +50,7 @@ class WebViewController: UIViewController,UIWebViewDelegate, GADBannerViewDelega
         var navBarHeight = (self.navigationController?.navigationBar.frame.size.height)!
         bannerView.frame.origin = CGPointMake(0, self.view.frame.size.height - bannerView.frame.height - navBarHeight)
         bannerView.frame.size = CGSizeMake(self.view.frame.width, bannerView.frame.height)
-        bannerView.adUnitID = "ca-app-pub-5040713306305537/8685162711"
+        bannerView.adUnitID = ADMOB_ID
         bannerView.delegate = self
         bannerView.rootViewController = self
         
@@ -56,10 +62,16 @@ class WebViewController: UIViewController,UIWebViewDelegate, GADBannerViewDelega
 
     func webViewDidFinishLoad(webView: UIWebView) {
         println("ページ読み込み完了")
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
     }
 
     func webViewDidStartLoad(webView: UIWebView) {
         println("ページ読み込み開始")
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
     }
     
     func onClickNavBarButton() {
