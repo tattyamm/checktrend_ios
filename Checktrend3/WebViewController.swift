@@ -40,8 +40,9 @@ class WebViewController: UIViewController,UIWebViewDelegate, GADBannerViewDelega
     private func getAdBannerView() -> GADBannerView {
         var bannerView: GADBannerView = GADBannerView()
         bannerView = GADBannerView(adSize:kGADAdSizeBanner)
-        //TODO tabbar分の高さを引く
-        bannerView.frame.origin = CGPointMake(0, self.view.frame.size.height - bannerView.frame.height - 50)
+
+        var navBarHeight = (self.navigationController?.navigationBar.frame.size.height)!
+        bannerView.frame.origin = CGPointMake(0, self.view.frame.size.height - bannerView.frame.height - navBarHeight)
         bannerView.frame.size = CGSizeMake(self.view.frame.width, bannerView.frame.height)
         bannerView.adUnitID = "ca-app-pub-5040713306305537/8685162711"
         bannerView.delegate = self
