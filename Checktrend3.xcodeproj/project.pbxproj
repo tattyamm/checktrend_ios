@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		AB62B507276C9FF736706288 /* Pods_Checktrend3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A5E219B55F7E721D52468C /* Pods_Checktrend3.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		AE32380A1B4C4721007A814E /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3238091B4C4720007A814E /* GoogleMobileAds.framework */; };
+		AE32380C1B4C48F4007A814E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE32380B1B4C48F4007A814E /* AdSupport.framework */; };
+		AE32380E1B4C48FB007A814E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE32380D1B4C48FB007A814E /* AudioToolbox.framework */; };
+		AE3238101B4C4900007A814E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE32380F1B4C4900007A814E /* AVFoundation.framework */; };
+		AE3238121B4C4906007A814E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3238111B4C4906007A814E /* CoreGraphics.framework */; };
+		AE3238141B4C490C007A814E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3238131B4C490C007A814E /* CoreTelephony.framework */; };
+		AE3238161B4C4912007A814E /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3238151B4C4912007A814E /* EventKit.framework */; };
+		AE3238181B4C4917007A814E /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3238171B4C4917007A814E /* EventKitUI.framework */; };
+		AE32381A1B4C491C007A814E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3238191B4C491C007A814E /* MessageUI.framework */; };
+		AE32381C1B4C4922007A814E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE32381B1B4C4922007A814E /* StoreKit.framework */; };
+		AE32381E1B4C4929007A814E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE32381D1B4C4929007A814E /* SystemConfiguration.framework */; };
 		AEAF1E011B3504780035AD28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF1E001B3504780035AD28 /* AppDelegate.swift */; };
 		AEAF1E0A1B35047A0035AD28 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEAF1E091B35047A0035AD28 /* Images.xcassets */; };
 		AEAF1E0D1B35047A0035AD28 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEAF1E0B1B35047A0035AD28 /* LaunchScreen.xib */; };
@@ -58,6 +69,17 @@
 
 /* Begin PBXFileReference section */
 		A9555ACF1BB8B1CA60567F39 /* Pods-Checktrend3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checktrend3.release.xcconfig"; path = "Pods/Target Support Files/Pods-Checktrend3/Pods-Checktrend3.release.xcconfig"; sourceTree = "<group>"; };
+		AE3238091B4C4720007A814E /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		AE32380B1B4C48F4007A814E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		AE32380D1B4C48FB007A814E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AE32380F1B4C4900007A814E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AE3238111B4C4906007A814E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AE3238131B4C490C007A814E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		AE3238151B4C4912007A814E /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		AE3238171B4C4917007A814E /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		AE3238191B4C491C007A814E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		AE32381B1B4C4922007A814E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		AE32381D1B4C4929007A814E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AEAF1DFB1B3504760035AD28 /* Checktrend3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checktrend3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEAF1DFF1B3504780035AD28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEAF1E001B3504780035AD28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +131,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE32381E1B4C4929007A814E /* SystemConfiguration.framework in Frameworks */,
+				AE32381C1B4C4922007A814E /* StoreKit.framework in Frameworks */,
+				AE32381A1B4C491C007A814E /* MessageUI.framework in Frameworks */,
+				AE3238181B4C4917007A814E /* EventKitUI.framework in Frameworks */,
+				AE3238161B4C4912007A814E /* EventKit.framework in Frameworks */,
+				AE3238141B4C490C007A814E /* CoreTelephony.framework in Frameworks */,
+				AE3238121B4C4906007A814E /* CoreGraphics.framework in Frameworks */,
+				AE3238101B4C4900007A814E /* AVFoundation.framework in Frameworks */,
+				AE32380E1B4C48FB007A814E /* AudioToolbox.framework in Frameworks */,
+				AE32380C1B4C48F4007A814E /* AdSupport.framework in Frameworks */,
+				AE32380A1B4C4721007A814E /* GoogleMobileAds.framework in Frameworks */,
 				AB62B507276C9FF736706288 /* Pods_Checktrend3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,6 +159,17 @@
 		1AB138D7A00786E6B0DE44B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE32381D1B4C4929007A814E /* SystemConfiguration.framework */,
+				AE32381B1B4C4922007A814E /* StoreKit.framework */,
+				AE3238191B4C491C007A814E /* MessageUI.framework */,
+				AE3238171B4C4917007A814E /* EventKitUI.framework */,
+				AE3238151B4C4912007A814E /* EventKit.framework */,
+				AE3238131B4C490C007A814E /* CoreTelephony.framework */,
+				AE3238111B4C4906007A814E /* CoreGraphics.framework */,
+				AE32380F1B4C4900007A814E /* AVFoundation.framework */,
+				AE32380D1B4C48FB007A814E /* AudioToolbox.framework */,
+				AE32380B1B4C48F4007A814E /* AdSupport.framework */,
+				AE3238091B4C4720007A814E /* GoogleMobileAds.framework */,
 				B9A5E219B55F7E721D52468C /* Pods_Checktrend3.framework */,
 			);
 			name = Frameworks;
@@ -548,6 +592,10 @@
 			baseConfigurationReference = B730EF05F65290F921538FCE /* Pods-Checktrend3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Checktrend3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -559,6 +607,10 @@
 			baseConfigurationReference = A9555ACF1BB8B1CA60567F39 /* Pods-Checktrend3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Checktrend3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
