@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,12 +17,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window?.rootViewController = mainTabBarController
         self.window?.makeKeyAndVisible()
         
+        //Google analytics
+        AppDelegate.setupGoogleAnalytics()
+
+        
         return true
+    }
+    
+    
+    var tracker: GAITracker?
+    //http://qiita.com/kaneshin/items/71f1c19d094e87e30a07
+    class func setupGoogleAnalytics() {
+        GAI.sharedInstance().trackUncaughtExceptions = true;
+        GAI.sharedInstance().dispatchInterval = 20
+        GAI.sharedInstance().logger.logLevel = .Verbose
+        if let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate {
+            appDelegate.tracker = GAI.sharedInstance().trackerWithTrackingId("UA-19734506-14")
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {

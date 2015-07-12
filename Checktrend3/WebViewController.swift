@@ -60,6 +60,20 @@ class WebViewController: UIViewController,UIWebViewDelegate, GADBannerViewDelega
         
         return bannerView
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        if let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate {
+            
+            //google analytics
+            let screenName = reflect(self).summary
+            println (screenName)
+            var tracker = GAI.sharedInstance().defaultTracker
+            tracker.set(kGAIScreenName, value: screenName)
+            var builder = GAIDictionaryBuilder.createScreenView()
+            tracker.send(builder.build() as [NSObject : AnyObject])
+        }
+    }
 
     func webViewDidFinishLoad(webView: UIWebView) {
         println("ページ読み込み完了")
