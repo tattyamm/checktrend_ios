@@ -120,6 +120,7 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
         
         println(tabUrl)
         
+        SVProgressHUD.show()
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         
         Alamofire.request(.GET, tabUrl, parameters: ["foo": "bar"])
@@ -142,6 +143,7 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
                 
                 println(error)
                 
+                SVProgressHUD.dismiss()
                 UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             })
     }
@@ -195,6 +197,7 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     override func viewWillDisappear(animated: Bool) {
+        SVProgressHUD.dismiss()
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
     }
 

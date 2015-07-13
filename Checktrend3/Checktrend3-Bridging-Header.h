@@ -9,3 +9,5 @@
 #import "GAILogger.h"
 #import "GAIDictionaryBuilder.h"
 
+#import "SVProgressHUD.h"
+

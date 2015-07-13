@@ -32,6 +32,10 @@
 		AED244B91B5294F6000830C4 /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AED244B71B5294F6000830C4 /* libAdIdAccess.a */; };
 		AED244BA1B5294F6000830C4 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AED244B81B5294F6000830C4 /* libGoogleAnalyticsServices.a */; };
 		AED244BF1B529D53000830C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AED244BE1B529D53000830C4 /* GoogleService-Info.plist */; };
+		AED244D21B5412C5000830C4 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = AED244CD1B5412C5000830C4 /* SVIndefiniteAnimatedView.m */; };
+		AED244D31B5412C5000830C4 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AED244CF1B5412C5000830C4 /* SVProgressHUD.bundle */; };
+		AED244D41B5412C5000830C4 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = AED244D11B5412C5000830C4 /* SVProgressHUD.m */; };
+		AED244D61B54132D000830C4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AED244D51B54132D000830C4 /* QuartzCore.framework */; };
 		AEE415101B46E1F900C9AB0E /* TabViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE4150F1B46E1F900C9AB0E /* TabViewController2.swift */; };
 		AEE415291B4818A300C9AB0E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE415121B4818A300C9AB0E /* Default-568h@2x.png */; };
 		AEE4152A1B4818A300C9AB0E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AEE415131B4818A300C9AB0E /* Default.png */; };
@@ -117,6 +121,13 @@
 		AED244C81B529E25000830C4 /* GAILogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
 		AED244C91B529E25000830C4 /* GAITrackedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
 		AED244CA1B529E25000830C4 /* GAITracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		AED244CC1B5412C5000830C4 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		AED244CD1B5412C5000830C4 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		AED244CE1B5412C5000830C4 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		AED244CF1B5412C5000830C4 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		AED244D01B5412C5000830C4 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		AED244D11B5412C5000830C4 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		AED244D51B54132D000830C4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		AEE4150F1B46E1F900C9AB0E /* TabViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController2.swift; sourceTree = "<group>"; };
 		AEE415121B4818A300C9AB0E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		AEE415131B4818A300C9AB0E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -157,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AED244D61B54132D000830C4 /* QuartzCore.framework in Frameworks */,
 				AED244BA1B5294F6000830C4 /* libGoogleAnalyticsServices.a in Frameworks */,
 				AED244B91B5294F6000830C4 /* libAdIdAccess.a in Frameworks */,
 				AED244B21B529489000830C4 /* libsqlite3.dylib in Frameworks */,
@@ -190,6 +202,7 @@
 		1AB138D7A00786E6B0DE44B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AED244D51B54132D000830C4 /* QuartzCore.framework */,
 				AED244B71B5294F6000830C4 /* libAdIdAccess.a */,
 				AED244B81B5294F6000830C4 /* libGoogleAnalyticsServices.a */,
 				AED244B31B5294E2000830C4 /* libAdIdAccess.a */,
@@ -237,6 +250,7 @@
 		AEAF1DFD1B3504770035AD28 /* Checktrend3 */ = {
 			isa = PBXGroup;
 			children = (
+				AED244CB1B5412C5000830C4 /* SVProgressHUD */,
 				AED244C01B529E00000830C4 /* GoogleAnalytics */,
 				AEAF1E001B3504780035AD28 /* AppDelegate.swift */,
 				AEAF1E221B350FDB0035AD28 /* MainTabBarController.swift */,
@@ -298,6 +312,19 @@
 			);
 			name = GoogleAnalytics;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		AED244CB1B5412C5000830C4 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				AED244CC1B5412C5000830C4 /* SVIndefiniteAnimatedView.h */,
+				AED244CD1B5412C5000830C4 /* SVIndefiniteAnimatedView.m */,
+				AED244CE1B5412C5000830C4 /* SVProgressHUD-Prefix.pch */,
+				AED244CF1B5412C5000830C4 /* SVProgressHUD.bundle */,
+				AED244D01B5412C5000830C4 /* SVProgressHUD.h */,
+				AED244D11B5412C5000830C4 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		AEE415111B4818A300C9AB0E /* Resources */ = {
@@ -423,6 +450,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AED244D31B5412C5000830C4 /* SVProgressHUD.bundle in Resources */,
 				AEE415381B4818A300C9AB0E /* icon_M.png in Resources */,
 				AEE415321B4818A300C9AB0E /* Icon.png in Resources */,
 				AEE4153F1B4818A300C9AB0E /* rotation_48.png in Resources */,
@@ -518,10 +546,12 @@
 			files = (
 				AEAF1E5D1B36F18D0035AD28 /* TabViewController1.swift in Sources */,
 				AEAF1E011B3504780035AD28 /* AppDelegate.swift in Sources */,
+				AED244D21B5412C5000830C4 /* SVIndefiniteAnimatedView.m in Sources */,
 				AEE415101B46E1F900C9AB0E /* TabViewController2.swift in Sources */,
 				AEAF1E5F1B36F8A40035AD28 /* TabViewControllerBase.swift in Sources */,
 				AEE4154C1B49593B00C9AB0E /* TabViewController3.swift in Sources */,
 				AEE4154E1B49595000C9AB0E /* TabViewController4.swift in Sources */,
+				AED244D41B5412C5000830C4 /* SVProgressHUD.m in Sources */,
 				AEF62C521B3FAF76000BB1DC /* WebViewController.swift in Sources */,
 				AEAF1E231B350FDB0035AD28 /* MainTabBarController.swift in Sources */,
 			);
