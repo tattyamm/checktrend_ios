@@ -36,7 +36,7 @@ class WebViewController: UIViewController,UIWebViewDelegate, GADBannerViewDelega
         var settingBtn:UIButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
         settingBtn.addTarget(self, action: "onClickNavBarButton", forControlEvents: UIControlEvents.TouchUpInside)
         settingBtn.frame = CGRectMake(0, 0, 24, 24)
-        settingBtn.setImage(UIImage(named: "Info.png"), forState: .Normal)
+        settingBtn.setImage(UIImage(named: "Share.png"), forState: .Normal)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: settingBtn)
 
         //ad http://www.sirochro.com/note/swift-admob-implementation/
