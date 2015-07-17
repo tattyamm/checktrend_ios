@@ -126,14 +126,14 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
         Alamofire.request(.GET, tabUrl, parameters: ["foo": "bar"])
             .responseJSON {(request, response, js, error) in
                 let json = JSON(js ?? "{}")
-                println(json)
+//                println(json)
                 for (key: String, subJson: JSON) in json {
                     for (key: String, subsubJson: JSON) in subJson["items"] {
                         //TODO クラス作る
-                        println(subsubJson["title"].string!)
-                        tmpItems.addObject(subsubJson["title"].string!) //要素がないとアプリが落ちる
-                        tmpUrls.addObject(subsubJson["link"].string!)
-                        tmpDescriptions.addObject(subsubJson["description"].string!)
+//                        println(subsubJson["title"].string ?? "")
+                        tmpItems.addObject(subsubJson["title"].string ?? "") //適当
+                        tmpUrls.addObject(subsubJson["link"].string ?? "")
+                        tmpDescriptions.addObject(subsubJson["description"].string ?? "")
                     }
                 }
 
