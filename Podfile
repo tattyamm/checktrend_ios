@@ -10,7 +10,7 @@ pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire'
 pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
  
 # Alamofire-SwiftyJSON
-pod 'Alamofire-SwiftyJSON', :git => "https://github.com/SwiftyJSON/Alamofire-SwiftyJSON.git"
+#pod 'Alamofire-SwiftyJSON', :git => "https://github.com/SwiftyJSON/Alamofire-SwiftyJSON.git"
 use_frameworks!
 
 

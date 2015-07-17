@@ -19,7 +19,7 @@ import UIKit
 
 import Alamofire
 import SwiftyJSON
-import Alamofire_SwiftyJSON
+
 
 
 class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -124,11 +124,13 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         
         Alamofire.request(.GET, tabUrl, parameters: ["foo": "bar"])
-            .responseSwiftyJSON({ (request, response, json, error) in
-//              println(json)
+            .responseJSON {(request, response, js, error) in
+                let json = JSON(js ?? "{}")
+                println(json)
                 for (key: String, subJson: JSON) in json {
                     for (key: String, subsubJson: JSON) in subJson["items"] {
                         //TODO クラス作る
+                        println(subsubJson["title"].string!)
                         tmpItems.addObject(subsubJson["title"].string!) //要素がないとアプリが落ちる
                         tmpUrls.addObject(subsubJson["link"].string!)
                         tmpDescriptions.addObject(subsubJson["description"].string!)
@@ -145,7 +147,7 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
                 
                 SVProgressHUD.dismiss()
                 UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-            })
+            }
     }
 
     
