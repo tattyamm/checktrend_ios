@@ -18,7 +18,7 @@ http://qiita.com/mochizukikotaro/items/f053495eb130e92e13e8
 import UIKit
 
 import Alamofire
-import SwiftyJSON
+//import SwiftyJSON
 
 
 
@@ -148,6 +148,7 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
                 SVProgressHUD.dismiss()
                 UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             }
+
     }
 
     

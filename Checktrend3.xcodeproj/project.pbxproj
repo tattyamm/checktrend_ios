@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB62B507276C9FF736706288 /* Pods_Checktrend3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A5E219B55F7E721D52468C /* Pods_Checktrend3.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		AE32380A1B4C4721007A814E /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3238091B4C4720007A814E /* GoogleMobileAds.framework */; };
 		AE32380C1B4C48F4007A814E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE32380B1B4C48F4007A814E /* AdSupport.framework */; };
 		AE32380E1B4C48FB007A814E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE32380D1B4C48FB007A814E /* AudioToolbox.framework */; };
@@ -17,8 +16,17 @@
 		AE3238161B4C4912007A814E /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3238151B4C4912007A814E /* EventKit.framework */; };
 		AE3238181B4C4917007A814E /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3238171B4C4917007A814E /* EventKitUI.framework */; };
 		AE32381A1B4C491C007A814E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3238191B4C491C007A814E /* MessageUI.framework */; };
-		AE32381C1B4C4922007A814E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE32381B1B4C4922007A814E /* StoreKit.framework */; };
 		AE32381E1B4C4929007A814E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE32381D1B4C4929007A814E /* SystemConfiguration.framework */; };
+		AEA2DD461B5AAB5A0041738C /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2DD3C1B5AAB5A0041738C /* Alamofire.swift */; };
+		AEA2DD471B5AAB5A0041738C /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2DD3D1B5AAB5A0041738C /* Download.swift */; };
+		AEA2DD481B5AAB5A0041738C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEA2DD3E1B5AAB5A0041738C /* Info.plist */; };
+		AEA2DD491B5AAB5A0041738C /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2DD3F1B5AAB5A0041738C /* Manager.swift */; };
+		AEA2DD4A1B5AAB5A0041738C /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2DD401B5AAB5A0041738C /* MultipartFormData.swift */; };
+		AEA2DD4B1B5AAB5A0041738C /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2DD411B5AAB5A0041738C /* ParameterEncoding.swift */; };
+		AEA2DD4C1B5AAB5A0041738C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2DD421B5AAB5A0041738C /* Request.swift */; };
+		AEA2DD4D1B5AAB5A0041738C /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2DD431B5AAB5A0041738C /* ResponseSerialization.swift */; };
+		AEA2DD4E1B5AAB5A0041738C /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2DD441B5AAB5A0041738C /* Upload.swift */; };
+		AEA2DD4F1B5AAB5A0041738C /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2DD451B5AAB5A0041738C /* Validation.swift */; };
 		AEAF1E011B3504780035AD28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF1E001B3504780035AD28 /* AppDelegate.swift */; };
 		AEAF1E0A1B35047A0035AD28 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEAF1E091B35047A0035AD28 /* Images.xcassets */; };
 		AEAF1E0D1B35047A0035AD28 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEAF1E0B1B35047A0035AD28 /* LaunchScreen.xib */; };
@@ -26,6 +34,9 @@
 		AEAF1E231B350FDB0035AD28 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF1E221B350FDB0035AD28 /* MainTabBarController.swift */; };
 		AEAF1E5D1B36F18D0035AD28 /* TabViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF1E5C1B36F18D0035AD28 /* TabViewController1.swift */; };
 		AEAF1E5F1B36F8A40035AD28 /* TabViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAF1E5E1B36F8A40035AD28 /* TabViewControllerBase.swift */; };
+		AEC759761B5ABDFD00CFE740 /* Info-iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEC759721B5ABDFD00CFE740 /* Info-iOS.plist */; };
+		AEC759771B5ABDFD00CFE740 /* Info-OSX.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEC759731B5ABDFD00CFE740 /* Info-OSX.plist */; };
+		AEC759781B5ABDFD00CFE740 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC759751B5ABDFD00CFE740 /* SwiftyJSON.swift */; };
 		AED244AC1B529464000830C4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AED244AB1B529464000830C4 /* CoreData.framework */; };
 		AED244B01B529472000830C4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AED244AF1B529472000830C4 /* libz.dylib */; };
 		AED244B21B529489000830C4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AED244B11B529489000830C4 /* libsqlite3.dylib */; };
@@ -79,7 +90,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A9555ACF1BB8B1CA60567F39 /* Pods-Checktrend3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checktrend3.release.xcconfig"; path = "Pods/Target Support Files/Pods-Checktrend3/Pods-Checktrend3.release.xcconfig"; sourceTree = "<group>"; };
 		AE3238091B4C4720007A814E /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		AE32380B1B4C48F4007A814E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		AE32380D1B4C48FB007A814E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -89,19 +99,33 @@
 		AE3238151B4C4912007A814E /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		AE3238171B4C4917007A814E /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		AE3238191B4C491C007A814E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		AE32381B1B4C4922007A814E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		AE32381D1B4C4929007A814E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		AEAF1DFB1B3504760035AD28 /* Checktrend3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checktrend3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEA2DD341B5AA77F0041738C /* Checktrend3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checktrend3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEA2DD361B5AAA150041738C /* Checktrend3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Checktrend3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEA2DD3B1B5AAB5A0041738C /* Alamofire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alamofire.h; sourceTree = "<group>"; };
+		AEA2DD3C1B5AAB5A0041738C /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		AEA2DD3D1B5AAB5A0041738C /* Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
+		AEA2DD3E1B5AAB5A0041738C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEA2DD3F1B5AAB5A0041738C /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		AEA2DD401B5AAB5A0041738C /* MultipartFormData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
+		AEA2DD411B5AAB5A0041738C /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		AEA2DD421B5AAB5A0041738C /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		AEA2DD431B5AAB5A0041738C /* ResponseSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
+		AEA2DD441B5AAB5A0041738C /* Upload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Upload.swift; sourceTree = "<group>"; };
+		AEA2DD451B5AAB5A0041738C /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		AEAF1DFF1B3504780035AD28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEAF1E001B3504780035AD28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEAF1E091B35047A0035AD28 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AEAF1E0C1B35047A0035AD28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		AEAF1E121B35047C0035AD28 /* Checktrend3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Checktrend3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEAF1E171B35047D0035AD28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEAF1E181B35047E0035AD28 /* Checktrend3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checktrend3Tests.swift; sourceTree = "<group>"; };
 		AEAF1E221B350FDB0035AD28 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		AEAF1E5C1B36F18D0035AD28 /* TabViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController1.swift; sourceTree = "<group>"; };
 		AEAF1E5E1B36F8A40035AD28 /* TabViewControllerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewControllerBase.swift; sourceTree = "<group>"; };
+		AEC759721B5ABDFD00CFE740 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		AEC759731B5ABDFD00CFE740 /* Info-OSX.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-OSX.plist"; sourceTree = "<group>"; };
+		AEC759741B5ABDFD00CFE740 /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
+		AEC759751B5ABDFD00CFE740 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		AED244AB1B529464000830C4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		AED244AD1B52946A000830C4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		AED244AF1B529472000830C4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -161,8 +185,6 @@
 		AEE4154B1B49593B00C9AB0E /* TabViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController3.swift; sourceTree = "<group>"; };
 		AEE4154D1B49595000C9AB0E /* TabViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController4.swift; sourceTree = "<group>"; };
 		AEF62C511B3FAF76000BB1DC /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		B730EF05F65290F921538FCE /* Pods-Checktrend3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Checktrend3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Checktrend3/Pods-Checktrend3.debug.xcconfig"; sourceTree = "<group>"; };
-		B9A5E219B55F7E721D52468C /* Pods_Checktrend3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Checktrend3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +199,6 @@
 				AED244B01B529472000830C4 /* libz.dylib in Frameworks */,
 				AED244AC1B529464000830C4 /* CoreData.framework in Frameworks */,
 				AE32381E1B4C4929007A814E /* SystemConfiguration.framework in Frameworks */,
-				AE32381C1B4C4922007A814E /* StoreKit.framework in Frameworks */,
 				AE32381A1B4C491C007A814E /* MessageUI.framework in Frameworks */,
 				AE3238181B4C4917007A814E /* EventKitUI.framework in Frameworks */,
 				AE3238161B4C4912007A814E /* EventKit.framework in Frameworks */,
@@ -187,7 +208,6 @@
 				AE32380E1B4C48FB007A814E /* AudioToolbox.framework in Frameworks */,
 				AE32380C1B4C48F4007A814E /* AdSupport.framework in Frameworks */,
 				AE32380A1B4C4721007A814E /* GoogleMobileAds.framework in Frameworks */,
-				AB62B507276C9FF736706288 /* Pods_Checktrend3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +234,6 @@
 				AED244AD1B52946A000830C4 /* libsqlite3.0.dylib */,
 				AED244AB1B529464000830C4 /* CoreData.framework */,
 				AE32381D1B4C4929007A814E /* SystemConfiguration.framework */,
-				AE32381B1B4C4922007A814E /* StoreKit.framework */,
 				AE3238191B4C491C007A814E /* MessageUI.framework */,
 				AE3238171B4C4917007A814E /* EventKitUI.framework */,
 				AE3238151B4C4912007A814E /* EventKit.framework */,
@@ -224,9 +243,26 @@
 				AE32380D1B4C48FB007A814E /* AudioToolbox.framework */,
 				AE32380B1B4C48F4007A814E /* AdSupport.framework */,
 				AE3238091B4C4720007A814E /* GoogleMobileAds.framework */,
-				B9A5E219B55F7E721D52468C /* Pods_Checktrend3.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEA2DD3A1B5AAB5A0041738C /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				AEA2DD3B1B5AAB5A0041738C /* Alamofire.h */,
+				AEA2DD3C1B5AAB5A0041738C /* Alamofire.swift */,
+				AEA2DD3D1B5AAB5A0041738C /* Download.swift */,
+				AEA2DD3E1B5AAB5A0041738C /* Info.plist */,
+				AEA2DD3F1B5AAB5A0041738C /* Manager.swift */,
+				AEA2DD401B5AAB5A0041738C /* MultipartFormData.swift */,
+				AEA2DD411B5AAB5A0041738C /* ParameterEncoding.swift */,
+				AEA2DD421B5AAB5A0041738C /* Request.swift */,
+				AEA2DD431B5AAB5A0041738C /* ResponseSerialization.swift */,
+				AEA2DD441B5AAB5A0041738C /* Upload.swift */,
+				AEA2DD451B5AAB5A0041738C /* Validation.swift */,
+			);
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 		AEAF1DF21B3504760035AD28 = {
@@ -234,24 +270,17 @@
 			children = (
 				AEAF1DFD1B3504770035AD28 /* Checktrend3 */,
 				AEAF1E151B35047C0035AD28 /* Checktrend3Tests */,
-				AEAF1DFC1B3504760035AD28 /* Products */,
-				B1BC6E624DC3609C386D6CA1 /* Pods */,
 				1AB138D7A00786E6B0DE44B9 /* Frameworks */,
+				AEA2DD341B5AA77F0041738C /* Checktrend3.app */,
+				AEA2DD361B5AAA150041738C /* Checktrend3Tests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		AEAF1DFC1B3504760035AD28 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AEAF1DFB1B3504760035AD28 /* Checktrend3.app */,
-				AEAF1E121B35047C0035AD28 /* Checktrend3Tests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		AEAF1DFD1B3504770035AD28 /* Checktrend3 */ = {
 			isa = PBXGroup;
 			children = (
+				AEC759711B5ABDFD00CFE740 /* SwifyJSON */,
+				AEA2DD3A1B5AAB5A0041738C /* Alamofire */,
 				AED244CB1B5412C5000830C4 /* SVProgressHUD */,
 				AED244C01B529E00000830C4 /* GoogleAnalytics */,
 				AEAF1E001B3504780035AD28 /* AppDelegate.swift */,
@@ -296,6 +325,17 @@
 				AEAF1E171B35047D0035AD28 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AEC759711B5ABDFD00CFE740 /* SwifyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				AEC759721B5ABDFD00CFE740 /* Info-iOS.plist */,
+				AEC759731B5ABDFD00CFE740 /* Info-OSX.plist */,
+				AEC759741B5ABDFD00CFE740 /* SwiftyJSON.h */,
+				AEC759751B5ABDFD00CFE740 /* SwiftyJSON.swift */,
+			);
+			path = SwifyJSON;
 			sourceTree = "<group>";
 		};
 		AED244C01B529E00000830C4 /* GoogleAnalytics */ = {
@@ -361,15 +401,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		B1BC6E624DC3609C386D6CA1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B730EF05F65290F921538FCE /* Pods-Checktrend3.debug.xcconfig */,
-				A9555ACF1BB8B1CA60567F39 /* Pods-Checktrend3.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -377,12 +408,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEAF1E1C1B35047E0035AD28 /* Build configuration list for PBXNativeTarget "Checktrend3" */;
 			buildPhases = (
-				2579A74F3F4C98136487607A /* Check Pods Manifest.lock */,
 				AEAF1DF71B3504760035AD28 /* Sources */,
 				AEAF1DF81B3504760035AD28 /* Frameworks */,
 				AEAF1DF91B3504760035AD28 /* Resources */,
-				96CEDC685BF0767612A24541 /* Embed Pods Frameworks */,
-				EAD5F1323EEAE4DFFF761B74 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -390,7 +418,7 @@
 			);
 			name = Checktrend3;
 			productName = Checktrend3;
-			productReference = AEAF1DFB1B3504760035AD28 /* Checktrend3.app */;
+			productReference = AEA2DD341B5AA77F0041738C /* Checktrend3.app */;
 			productType = "com.apple.product-type.application";
 		};
 		AEAF1E111B35047C0035AD28 /* Checktrend3Tests */ = {
@@ -408,7 +436,7 @@
 			);
 			name = Checktrend3Tests;
 			productName = Checktrend3Tests;
-			productReference = AEAF1E121B35047C0035AD28 /* Checktrend3Tests.xctest */;
+			productReference = AEA2DD361B5AAA150041738C /* Checktrend3Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -422,6 +450,12 @@
 				TargetAttributes = {
 					AEAF1DFA1B3504760035AD28 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = PCE4C355W9;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					AEAF1E111B35047C0035AD28 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -438,7 +472,7 @@
 				Base,
 			);
 			mainGroup = AEAF1DF21B3504760035AD28;
-			productRefGroup = AEAF1DFC1B3504760035AD28 /* Products */;
+			productRefGroup = AEAF1DF21B3504760035AD28;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -455,6 +489,7 @@
 			files = (
 				AED244D31B5412C5000830C4 /* SVProgressHUD.bundle in Resources */,
 				AEE415381B4818A300C9AB0E /* icon_M.png in Resources */,
+				AEC759771B5ABDFD00CFE740 /* Info-OSX.plist in Resources */,
 				AEE415321B4818A300C9AB0E /* Icon.png in Resources */,
 				AEE4153F1B4818A300C9AB0E /* rotation_48.png in Resources */,
 				AEE415391B4818A300C9AB0E /* icon_M@2x.png in Resources */,
@@ -465,6 +500,7 @@
 				AEAF1E0D1B35047A0035AD28 /* LaunchScreen.xib in Resources */,
 				AEAF1E0A1B35047A0035AD28 /* Images.xcassets in Resources */,
 				AEE4152B1B4818A300C9AB0E /* Default@2x.png in Resources */,
+				AEC759761B5ABDFD00CFE740 /* Info-iOS.plist in Resources */,
 				AEE4153A1B4818A300C9AB0E /* icon_t.png in Resources */,
 				AEE415411B48386F00C9AB0E /* info.png in Resources */,
 				AED244BF1B529D53000830C4 /* GoogleService-Info.plist in Resources */,
@@ -483,6 +519,7 @@
 				AEE4153E1B4818A300C9AB0E /* rotation_32.png in Resources */,
 				AEE415351B4818A300C9AB0E /* icon_A@2x.png in Resources */,
 				AED244DA1B55588F000830C4 /* Share.png in Resources */,
+				AEA2DD481B5AAB5A0041738C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,67 +532,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		2579A74F3F4C98136487607A /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		96CEDC685BF0767612A24541 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Checktrend3/Pods-Checktrend3-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EAD5F1323EEAE4DFFF761B74 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Checktrend3/Pods-Checktrend3-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		AEAF1DF71B3504760035AD28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEA2DD4E1B5AAB5A0041738C /* Upload.swift in Sources */,
 				AEAF1E5D1B36F18D0035AD28 /* TabViewController1.swift in Sources */,
+				AEA2DD4C1B5AAB5A0041738C /* Request.swift in Sources */,
+				AEC759781B5ABDFD00CFE740 /* SwiftyJSON.swift in Sources */,
 				AEAF1E011B3504780035AD28 /* AppDelegate.swift in Sources */,
+				AEA2DD4A1B5AAB5A0041738C /* MultipartFormData.swift in Sources */,
 				AED244D21B5412C5000830C4 /* SVIndefiniteAnimatedView.m in Sources */,
 				AEE415101B46E1F900C9AB0E /* TabViewController2.swift in Sources */,
 				AEAF1E5F1B36F8A40035AD28 /* TabViewControllerBase.swift in Sources */,
 				AEE4154C1B49593B00C9AB0E /* TabViewController3.swift in Sources */,
 				AEE4154E1B49595000C9AB0E /* TabViewController4.swift in Sources */,
+				AEA2DD4D1B5AAB5A0041738C /* ResponseSerialization.swift in Sources */,
+				AEA2DD491B5AAB5A0041738C /* Manager.swift in Sources */,
 				AED244D41B5412C5000830C4 /* SVProgressHUD.m in Sources */,
+				AEA2DD4F1B5AAB5A0041738C /* Validation.swift in Sources */,
+				AEA2DD461B5AAB5A0041738C /* Alamofire.swift in Sources */,
+				AEA2DD471B5AAB5A0041738C /* Download.swift in Sources */,
+				AEA2DD4B1B5AAB5A0041738C /* ParameterEncoding.swift in Sources */,
 				AEF62C521B3FAF76000BB1DC /* WebViewController.swift in Sources */,
 				AEAF1E231B350FDB0035AD28 /* MainTabBarController.swift in Sources */,
 			);
@@ -684,10 +683,11 @@
 		};
 		AEAF1E1D1B35047E0035AD28 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B730EF05F65290F921538FCE /* Pods-Checktrend3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -701,6 +701,7 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Checktrend3/Checktrend3-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -708,10 +709,10 @@
 		};
 		AEAF1E1E1B35047E0035AD28 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9555ACF1BB8B1CA60567F39 /* Pods-Checktrend3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -725,6 +726,7 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Checktrend3/Checktrend3-Bridging-Header.h";
 			};
 			name = Release;
