@@ -17,7 +17,7 @@ http://qiita.com/mochizukikotaro/items/f053495eb130e92e13e8
 
 import UIKit
 
-import Alamofire
+//import Alamofire
 //import SwiftyJSON
 
 
@@ -73,9 +73,10 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
             let screenName = reflect(self).summary
             println (screenName)
             var tracker = GAI.sharedInstance().defaultTracker
-            tracker.set(kGAIScreenName, value: screenName)
-            var builder = GAIDictionaryBuilder.createScreenView()
-            tracker.send(builder.build() as [NSObject : AnyObject])
+            //TODO ここで落ちた nilをgetしたら落ちる
+//            tracker.set(kGAIScreenName, value: screenName)
+//            var builder = GAIDictionaryBuilder.createScreenView()
+//            tracker.send(builder.build() as [NSObject : AnyObject])
         }
     }
     
@@ -123,7 +124,8 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
         SVProgressHUD.show()
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         
-        Alamofire.request(.GET, tabUrl, parameters: ["foo": "bar"])
+        //Alamofire
+        request(.GET, tabUrl, parameters: ["foo": "bar"])
             .responseJSON {(request, response, js, error) in
                 let json = JSON(js ?? "{}")
 //                println(json)
