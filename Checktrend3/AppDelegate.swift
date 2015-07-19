@@ -17,13 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+
+        //Google analytics
+        AppDelegate.setupGoogleAnalytics()
+        
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window?.rootViewController = mainTabBarController
         self.window?.makeKeyAndVisible()
-        
-        //Google analytics
-        AppDelegate.setupGoogleAnalytics()
-
         
         return true
     }

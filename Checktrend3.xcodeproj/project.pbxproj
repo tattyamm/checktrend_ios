@@ -17,6 +17,10 @@
 		AE3238181B4C4917007A814E /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3238171B4C4917007A814E /* EventKitUI.framework */; };
 		AE32381A1B4C491C007A814E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3238191B4C491C007A814E /* MessageUI.framework */; };
 		AE32381E1B4C4929007A814E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE32381D1B4C4929007A814E /* SystemConfiguration.framework */; };
+		AE7E0E981B5BF59C00742CC3 /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7E0E941B5BF40900742CC3 /* libAdIdAccess.a */; };
+		AE7E0E9A1B5BFA4E00742CC3 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AED244AD1B52946A000830C4 /* libsqlite3.0.dylib */; };
+		AE7E0E9B1B5BFB9D00742CC3 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7E0E951B5BF40900742CC3 /* libGoogleAnalyticsServices.a */; };
+		AE7E0E9D1B5BFE2D00742CC3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7E0E9C1B5BFE2D00742CC3 /* libz.dylib */; };
 		AEA2DD461B5AAB5A0041738C /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2DD3C1B5AAB5A0041738C /* Alamofire.swift */; };
 		AEA2DD471B5AAB5A0041738C /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2DD3D1B5AAB5A0041738C /* Download.swift */; };
 		AEA2DD481B5AAB5A0041738C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEA2DD3E1B5AAB5A0041738C /* Info.plist */; };
@@ -38,10 +42,6 @@
 		AEC759771B5ABDFD00CFE740 /* Info-OSX.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEC759731B5ABDFD00CFE740 /* Info-OSX.plist */; };
 		AEC759781B5ABDFD00CFE740 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC759751B5ABDFD00CFE740 /* SwiftyJSON.swift */; };
 		AED244AC1B529464000830C4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AED244AB1B529464000830C4 /* CoreData.framework */; };
-		AED244B01B529472000830C4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AED244AF1B529472000830C4 /* libz.dylib */; };
-		AED244B21B529489000830C4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AED244B11B529489000830C4 /* libsqlite3.dylib */; };
-		AED244B91B5294F6000830C4 /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AED244B71B5294F6000830C4 /* libAdIdAccess.a */; };
-		AED244BA1B5294F6000830C4 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AED244B81B5294F6000830C4 /* libGoogleAnalyticsServices.a */; };
 		AED244BF1B529D53000830C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AED244BE1B529D53000830C4 /* GoogleService-Info.plist */; };
 		AED244D21B5412C5000830C4 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = AED244CD1B5412C5000830C4 /* SVIndefiniteAnimatedView.m */; };
 		AED244D31B5412C5000830C4 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AED244CF1B5412C5000830C4 /* SVProgressHUD.bundle */; };
@@ -100,6 +100,9 @@
 		AE3238171B4C4917007A814E /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		AE3238191B4C491C007A814E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		AE32381D1B4C4929007A814E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AE7E0E941B5BF40900742CC3 /* libAdIdAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdIdAccess.a; sourceTree = "<group>"; };
+		AE7E0E951B5BF40900742CC3 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		AE7E0E9C1B5BFE2D00742CC3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		AEA2DD341B5AA77F0041738C /* Checktrend3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checktrend3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA2DD361B5AAA150041738C /* Checktrend3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Checktrend3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA2DD3B1B5AAB5A0041738C /* Alamofire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alamofire.h; sourceTree = "<group>"; };
@@ -128,12 +131,6 @@
 		AEC759751B5ABDFD00CFE740 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		AED244AB1B529464000830C4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		AED244AD1B52946A000830C4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		AED244AF1B529472000830C4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		AED244B11B529489000830C4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		AED244B31B5294E2000830C4 /* libAdIdAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAdIdAccess.a; path = ../library/GoogleAnalyticsServicesiOS_3.12/libAdIdAccess.a; sourceTree = "<group>"; };
-		AED244B41B5294E2000830C4 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = ../library/GoogleAnalyticsServicesiOS_3.12/libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
-		AED244B71B5294F6000830C4 /* libAdIdAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdIdAccess.a; sourceTree = "<group>"; };
-		AED244B81B5294F6000830C4 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		AED244BB1B529686000830C4 /* Checktrend3-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Checktrend3-Bridging-Header.h"; sourceTree = "<group>"; };
 		AED244BE1B529D53000830C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AED244C11B529E25000830C4 /* GAI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
@@ -192,11 +189,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE7E0E9D1B5BFE2D00742CC3 /* libz.dylib in Frameworks */,
 				AED244D61B54132D000830C4 /* QuartzCore.framework in Frameworks */,
-				AED244BA1B5294F6000830C4 /* libGoogleAnalyticsServices.a in Frameworks */,
-				AED244B91B5294F6000830C4 /* libAdIdAccess.a in Frameworks */,
-				AED244B21B529489000830C4 /* libsqlite3.dylib in Frameworks */,
-				AED244B01B529472000830C4 /* libz.dylib in Frameworks */,
 				AED244AC1B529464000830C4 /* CoreData.framework in Frameworks */,
 				AE32381E1B4C4929007A814E /* SystemConfiguration.framework in Frameworks */,
 				AE32381A1B4C491C007A814E /* MessageUI.framework in Frameworks */,
@@ -208,6 +202,9 @@
 				AE32380E1B4C48FB007A814E /* AudioToolbox.framework in Frameworks */,
 				AE32380C1B4C48F4007A814E /* AdSupport.framework in Frameworks */,
 				AE32380A1B4C4721007A814E /* GoogleMobileAds.framework in Frameworks */,
+				AE7E0E981B5BF59C00742CC3 /* libAdIdAccess.a in Frameworks */,
+				AE7E0E9B1B5BFB9D00742CC3 /* libGoogleAnalyticsServices.a in Frameworks */,
+				AE7E0E9A1B5BFA4E00742CC3 /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,13 +221,10 @@
 		1AB138D7A00786E6B0DE44B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE7E0E9C1B5BFE2D00742CC3 /* libz.dylib */,
+				AE7E0E941B5BF40900742CC3 /* libAdIdAccess.a */,
+				AE7E0E951B5BF40900742CC3 /* libGoogleAnalyticsServices.a */,
 				AED244D51B54132D000830C4 /* QuartzCore.framework */,
-				AED244B71B5294F6000830C4 /* libAdIdAccess.a */,
-				AED244B81B5294F6000830C4 /* libGoogleAnalyticsServices.a */,
-				AED244B31B5294E2000830C4 /* libAdIdAccess.a */,
-				AED244B41B5294E2000830C4 /* libGoogleAnalyticsServices.a */,
-				AED244B11B529489000830C4 /* libsqlite3.dylib */,
-				AED244AF1B529472000830C4 /* libz.dylib */,
 				AED244AD1B52946A000830C4 /* libsqlite3.0.dylib */,
 				AED244AB1B529464000830C4 /* CoreData.framework */,
 				AE32381D1B4C4929007A814E /* SystemConfiguration.framework */,

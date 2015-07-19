@@ -74,9 +74,9 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
             println (screenName)
             var tracker = GAI.sharedInstance().defaultTracker
             //TODO ここで落ちた nilをgetしたら落ちる
-//            tracker.set(kGAIScreenName, value: screenName)
-//            var builder = GAIDictionaryBuilder.createScreenView()
-//            tracker.send(builder.build() as [NSObject : AnyObject])
+            tracker.set(kGAIScreenName, value: screenName)
+            var builder = GAIDictionaryBuilder.createScreenView()
+            tracker.send(builder.build() as [NSObject : AnyObject])
         }
     }
     
