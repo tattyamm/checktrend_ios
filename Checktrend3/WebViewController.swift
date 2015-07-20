@@ -93,10 +93,18 @@ class WebViewController: UIViewController,UIWebViewDelegate, GADBannerViewDelega
         let currentUrl : String = (myWebView.request?.URL!.absoluteString)!
         println("current url : " + currentUrl)
         
+        trackEvent("button", action: "share", label: currentUrl, value: nil)
+        
         let url = NSURL(string: currentUrl)
         if UIApplication.sharedApplication().canOpenURL(url!){
             UIApplication.sharedApplication().openURL(url!)
         }
+    }
+
+    func trackEvent(category: String, action: String, label: String, value: NSNumber?) {
+        let tracker = GAI.sharedInstance().defaultTracker
+        let trackDictionary = GAIDictionaryBuilder.createEventWithCategory(category, action: action, label: label, value: value).build()
+        tracker.send(trackDictionary as [NSObject : AnyObject])
     }
     
     override func didReceiveMemoryWarning() {

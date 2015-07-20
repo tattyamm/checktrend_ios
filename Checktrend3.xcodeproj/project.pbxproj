@@ -702,7 +702,7 @@
 					"$(inherited)",
 					"/Users/Endo/Documents/xcode/#CheckTrend3/library/GoogleAnalyticsServicesiOS_3.12",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Checktrend3/AdMob/GoogleAnalytics",
+					"$(PROJECT_DIR)/Checktrend3/AdMob",
 					"$(PROJECT_DIR)/Checktrend3/GoogleAnalytics",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -732,7 +732,7 @@
 					"$(inherited)",
 					"/Users/Endo/Documents/xcode/#CheckTrend3/library/GoogleAnalyticsServicesiOS_3.12",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Checktrend3/AdMob/GoogleAnalytics",
+					"$(PROJECT_DIR)/Checktrend3/AdMob",
 					"$(PROJECT_DIR)/Checktrend3/GoogleAnalytics",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";

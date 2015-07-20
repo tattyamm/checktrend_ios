@@ -46,12 +46,12 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
         self.title = tabMainTitle
         self.tabBarItem.title = tabBarTitle
         //上のボタン
-        tabbarButton = UIBarButtonItem(barButtonSystemItem: .Refresh, target: self, action: "onClickNavBarButton")
+        tabbarButton = UIBarButtonItem(barButtonSystemItem: .Refresh, target: self, action: "onClickReloadButton")
         self.navigationItem.leftBarButtonItem = tabbarButton
         
         //上のボタン
         //var settingBtn:UIButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
-        //settingBtn.addTarget(self, action: "onClickNavBarButton", forControlEvents: UIControlEvents.TouchUpInside)
+        //settingBtn.addTarget(self, action: "onClickReloadButton", forControlEvents: UIControlEvents.TouchUpInside)
         //settingBtn.frame = CGRectMake(0, 0, 24, 24)
         //settingBtn.setImage(UIImage(named: "Info.png"), forState: .Normal)
         //self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: settingBtn)
@@ -73,7 +73,6 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
             let screenName = reflect(self).summary
             println (screenName)
             var tracker = GAI.sharedInstance().defaultTracker
-            //TODO ここで落ちた nilをgetしたら落ちる
             tracker.set(kGAIScreenName, value: screenName)
             var builder = GAIDictionaryBuilder.createScreenView()
             tracker.send(builder.build() as [NSObject : AnyObject])
@@ -81,8 +80,15 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     //tabbarボタンを押したとき
-    func onClickNavBarButton() {
+    func onClickReloadButton() {
+        trackEvent("button", action: "reload", label: "tabview controller", value: nil)
         connection()
+    }
+    
+    func trackEvent(category: String, action: String, label: String, value: NSNumber?) {
+        let tracker = GAI.sharedInstance().defaultTracker
+        let trackDictionary = GAIDictionaryBuilder.createEventWithCategory(category, action: action, label: label, value: value).build()
+        tracker.send(trackDictionary as [NSObject : AnyObject])
     }
     
     func setUp() {
@@ -174,10 +180,15 @@ class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewD
         println("Num: \(indexPath.row)")
         println("Value: \(myItems[indexPath.row])")
         println("Url: \(myUrls[indexPath.row])")
+
+        let num = indexPath.row
+        let startUrl = myUrls[indexPath.row] as! String
+        let viewTitle = myItems[indexPath.row] as! String
+        trackEvent("list", action: "select", label: viewTitle, value: num)
         
         let second = WebViewController()
-        second.startUrl = myUrls[indexPath.row] as! String
-        second.viewTitle = myItems[indexPath.row] as! String
+        second.startUrl = startUrl
+        second.viewTitle = viewTitle
         self.navigationController?.pushViewController(second, animated: true)
     }
 
