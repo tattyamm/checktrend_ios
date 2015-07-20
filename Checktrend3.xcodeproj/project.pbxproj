@@ -16,6 +16,15 @@
 		AE3238181B4C4917007A814E /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3238171B4C4917007A814E /* EventKitUI.framework */; };
 		AE32381A1B4C491C007A814E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3238191B4C491C007A814E /* MessageUI.framework */; };
 		AE32381E1B4C4929007A814E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE32381D1B4C4929007A814E /* SystemConfiguration.framework */; };
+		AE4072DB1B5D4F860044FAF9 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = AE4072D91B5D4F860044FAF9 /* Icon-60.png */; };
+		AE4072DE1B5D55020044FAF9 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE4072DD1B5D55020044FAF9 /* Icon-60@3x.png */; };
+		AE4072E21B5D55BA0044FAF9 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = AE4072DF1B5D55BA0044FAF9 /* Icon-40.png */; };
+		AE4072E31B5D55BA0044FAF9 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE4072E01B5D55BA0044FAF9 /* Icon-40@2x.png */; };
+		AE4072E41B5D55BA0044FAF9 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE4072E11B5D55BA0044FAF9 /* Icon-40@3x.png */; };
+		AE4072E81B5D56230044FAF9 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = AE4072E51B5D56230044FAF9 /* Icon-29.png */; };
+		AE4072E91B5D56230044FAF9 /* Icon-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE4072E61B5D56230044FAF9 /* Icon-29@2x.png */; };
+		AE4072EA1B5D56230044FAF9 /* Icon-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE4072E71B5D56230044FAF9 /* Icon-29@3x.png */; };
+		AE4072EC1B5D571F0044FAF9 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE4072EB1B5D571F0044FAF9 /* Icon-60@2x.png */; };
 		AE7E0E9A1B5BFA4E00742CC3 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AED244AD1B52946A000830C4 /* libsqlite3.0.dylib */; };
 		AE7E0E9D1B5BFE2D00742CC3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7E0E9C1B5BFE2D00742CC3 /* libz.dylib */; };
 		AE7E0EA01B5C92E700742CC3 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7E0E9F1B5C92E700742CC3 /* GoogleMobileAds.framework */; };
@@ -100,6 +109,15 @@
 		AE3238171B4C4917007A814E /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		AE3238191B4C491C007A814E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		AE32381D1B4C4929007A814E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AE4072D91B5D4F860044FAF9 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		AE4072DD1B5D55020044FAF9 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		AE4072DF1B5D55BA0044FAF9 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		AE4072E01B5D55BA0044FAF9 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		AE4072E11B5D55BA0044FAF9 /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
+		AE4072E51B5D56230044FAF9 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
+		AE4072E61B5D56230044FAF9 /* Icon-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29@2x.png"; sourceTree = "<group>"; };
+		AE4072E71B5D56230044FAF9 /* Icon-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29@3x.png"; sourceTree = "<group>"; };
+		AE4072EB1B5D571F0044FAF9 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		AE7E0E9C1B5BFE2D00742CC3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		AE7E0E9F1B5C92E700742CC3 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Checktrend3/AdMob/GoogleMobileAds.framework; sourceTree = "<group>"; };
 		AE7E0EB11B5C94EB00742CC3 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
@@ -383,6 +401,15 @@
 				AED244D91B55588F000830C4 /* Share.png */,
 				AEE415151B4818A300C9AB0E /* Icon-72.png */,
 				AEE415161B4818A300C9AB0E /* Icon-72@2x.png */,
+				AE4072E51B5D56230044FAF9 /* Icon-29.png */,
+				AE4072E61B5D56230044FAF9 /* Icon-29@2x.png */,
+				AE4072E71B5D56230044FAF9 /* Icon-29@3x.png */,
+				AE4072D91B5D4F860044FAF9 /* Icon-60.png */,
+				AE4072EB1B5D571F0044FAF9 /* Icon-60@2x.png */,
+				AE4072DD1B5D55020044FAF9 /* Icon-60@3x.png */,
+				AE4072DF1B5D55BA0044FAF9 /* Icon-40.png */,
+				AE4072E01B5D55BA0044FAF9 /* Icon-40@2x.png */,
+				AE4072E11B5D55BA0044FAF9 /* Icon-40@3x.png */,
 				AEE415171B4818A300C9AB0E /* Icon-Small-50.png */,
 				AEE415181B4818A300C9AB0E /* Icon-Small-50@2x.png */,
 				AEE415191B4818A300C9AB0E /* Icon-Small.png */,
@@ -496,23 +523,32 @@
 				AEC759771B5ABDFD00CFE740 /* Info-OSX.plist in Resources */,
 				AEE415321B4818A300C9AB0E /* Icon.png in Resources */,
 				AEE4153F1B4818A300C9AB0E /* rotation_48.png in Resources */,
+				AE4072DB1B5D4F860044FAF9 /* Icon-60.png in Resources */,
 				AEE415391B4818A300C9AB0E /* icon_M@2x.png in Resources */,
 				AEE415451B48B8C000C9AB0E /* Localizable.strings in Resources */,
 				AEE415331B4818A300C9AB0E /* Icon@2x.png in Resources */,
+				AE4072E31B5D55BA0044FAF9 /* Icon-40@2x.png in Resources */,
+				AE4072EA1B5D56230044FAF9 /* Icon-29@3x.png in Resources */,
 				AEE4152F1B4818A300C9AB0E /* Icon-Small-50@2x.png in Resources */,
 				AEE4152D1B4818A300C9AB0E /* Icon-72@2x.png in Resources */,
 				AEAF1E0D1B35047A0035AD28 /* LaunchScreen.xib in Resources */,
 				AEAF1E0A1B35047A0035AD28 /* Images.xcassets in Resources */,
+				AE4072E41B5D55BA0044FAF9 /* Icon-40@3x.png in Resources */,
 				AEE4152B1B4818A300C9AB0E /* Default@2x.png in Resources */,
 				AEC759761B5ABDFD00CFE740 /* Info-iOS.plist in Resources */,
 				AEE4153A1B4818A300C9AB0E /* icon_t.png in Resources */,
+				AE4072EC1B5D571F0044FAF9 /* Icon-60@2x.png in Resources */,
 				AEE415411B48386F00C9AB0E /* info.png in Resources */,
 				AED244BF1B529D53000830C4 /* GoogleService-Info.plist in Resources */,
+				AE4072E21B5D55BA0044FAF9 /* Icon-40.png in Resources */,
 				AEE415291B4818A300C9AB0E /* Default-568h@2x.png in Resources */,
 				AEE4152E1B4818A300C9AB0E /* Icon-Small-50.png in Resources */,
+				AE4072E81B5D56230044FAF9 /* Icon-29.png in Resources */,
+				AE4072DE1B5D55020044FAF9 /* Icon-60@3x.png in Resources */,
 				AEE4152A1B4818A300C9AB0E /* Default.png in Resources */,
 				AEE415301B4818A300C9AB0E /* Icon-Small.png in Resources */,
 				AEE4152C1B4818A300C9AB0E /* Icon-72.png in Resources */,
+				AE4072E91B5D56230044FAF9 /* Icon-29@2x.png in Resources */,
 				AEE4153B1B4818A300C9AB0E /* icon_t@2x.png in Resources */,
 				AEE4153C1B4818A300C9AB0E /* icon_Y.png in Resources */,
 				AEE415361B4818A300C9AB0E /* icon_G.png in Resources */,
@@ -666,7 +702,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Tatsuya Endou (PCE4C355W9)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -681,6 +717,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "3057be1a-863c-4612-a1d6-08cfd7e62074";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
