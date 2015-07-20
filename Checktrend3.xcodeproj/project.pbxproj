@@ -21,6 +21,7 @@
 		AE7E0EA01B5C92E700742CC3 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7E0E9F1B5C92E700742CC3 /* GoogleMobileAds.framework */; };
 		AE7E0EBD1B5C94EB00742CC3 /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7E0EBB1B5C94EB00742CC3 /* libAdIdAccess.a */; };
 		AE7E0EBE1B5C94EB00742CC3 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7E0EBC1B5C94EB00742CC3 /* libGoogleAnalyticsServices.a */; };
+		AE7E0EC01B5CE2A600742CC3 /* Icon-maru.png in Resources */ = {isa = PBXBuildFile; fileRef = AE7E0EBF1B5CE2A600742CC3 /* Icon-maru.png */; };
 		AEA2DD461B5AAB5A0041738C /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2DD3C1B5AAB5A0041738C /* Alamofire.swift */; };
 		AEA2DD471B5AAB5A0041738C /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2DD3D1B5AAB5A0041738C /* Download.swift */; };
 		AEA2DD481B5AAB5A0041738C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEA2DD3E1B5AAB5A0041738C /* Info.plist */; };
@@ -113,6 +114,7 @@
 		AE7E0EBA1B5C94EB00742CC3 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
 		AE7E0EBB1B5C94EB00742CC3 /* libAdIdAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAdIdAccess.a; path = Checktrend3/GoogleAnalytics/libAdIdAccess.a; sourceTree = "<group>"; };
 		AE7E0EBC1B5C94EB00742CC3 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = Checktrend3/GoogleAnalytics/libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		AE7E0EBF1B5CE2A600742CC3 /* Icon-maru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-maru.png"; sourceTree = "<group>"; };
 		AEA2DD341B5AA77F0041738C /* Checktrend3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checktrend3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA2DD361B5AAA150041738C /* Checktrend3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Checktrend3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA2DD3B1B5AAB5A0041738C /* Alamofire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alamofire.h; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 		AEE415111B4818A300C9AB0E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AE7E0EBF1B5CE2A600742CC3 /* Icon-maru.png */,
 				AEE415121B4818A300C9AB0E /* Default-568h@2x.png */,
 				AEE415131B4818A300C9AB0E /* Default.png */,
 				AEE415141B4818A300C9AB0E /* Default@2x.png */,
@@ -519,6 +522,7 @@
 				AEE415311B4818A300C9AB0E /* Icon-Small@2x.png in Resources */,
 				AEE4153E1B4818A300C9AB0E /* rotation_32.png in Resources */,
 				AEE415351B4818A300C9AB0E /* icon_A@2x.png in Resources */,
+				AE7E0EC01B5CE2A600742CC3 /* Icon-maru.png in Resources */,
 				AED244DA1B55588F000830C4 /* Share.png in Resources */,
 				AEA2DD481B5AAB5A0041738C /* Info.plist in Resources */,
 			);
