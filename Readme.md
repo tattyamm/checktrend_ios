@@ -1,7 +1,8 @@
 #Checktrend
 
 ##概要
-チェックトレンドのiOS(swift)版です。
+* チェックトレンドのiOS(swift)版です。
+* [blog](http://blog.livedoor.jp/tattyamm/archives/5077201.html)
 
 ##各URL
 * [iOS](http://itunes.apple.com/jp/app/id397153166?mt=8)
