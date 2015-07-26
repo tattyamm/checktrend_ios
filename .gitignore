@@ -1,3 +1,10 @@
+# library
+Checktrend3/AdMob/
+Checktrend3/Alamofire/
+Checktrend3/GoogleAnalytics/
+Checktrend3/SVProgressHUD/
+Checktrend3/SwifyJSON/
+
 # Xcode (from gitignore.io)
 build/
 *.pbxuser
