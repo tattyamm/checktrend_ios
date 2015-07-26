@@ -6,7 +6,7 @@ class WebViewController: UIViewController,UIWebViewDelegate, GADBannerViewDelega
     var startUrl:String = ""
     var viewTitle = ""
     let myWebView : UIWebView = UIWebView()
-    let ADMOB_ID = "ca-app-pub-5040713306305537/8685162711"
+    let ADMOB_ID = "" //設定の必要あり
     let TABBAR_HEIGHT_DEFAULT : CGFloat = 44.0
     
     var bannerView: GADBannerView!
