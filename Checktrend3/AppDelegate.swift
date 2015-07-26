@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Checktrend3
-//
-//  Created by tatsuya endo on 2015/06/20.
-//  Copyright (c) 2015年 tattyamm. All rights reserved.
-//
-
 import UIKit
 
 

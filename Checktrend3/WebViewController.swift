@@ -1,6 +1,3 @@
-//
-//  http://kzy52.com/entry/2015/02/20/000838
-
 import UIKit
 import GoogleMobileAds
 
@@ -39,7 +36,7 @@ class WebViewController: UIViewController,UIWebViewDelegate, GADBannerViewDelega
         settingBtn.setImage(UIImage(named: "Share.png"), forState: .Normal)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: settingBtn)
 
-        //ad http://www.sirochro.com/note/swift-admob-implementation/
+        //ad admob
         let bannerView:GADBannerView = getAdBannerView()
         self.view.addSubview(bannerView)
     }

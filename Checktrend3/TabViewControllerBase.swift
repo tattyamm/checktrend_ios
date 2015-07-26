@@ -1,26 +1,7 @@
-/*
-llibrary
-http://vdeep.net/xcode63-cocoapods-alamofire-swiftyjson
-
-
-http://qiita.com/tsumekoara/items/7293c54762afeeb10ed5
-のようにgoogleajax経由dedouda?
-
-http://qiita.com/yukihamada/items/9b0067f905418105a2c6
-
-https://sites.google.com/a/gclue.jp/swift-docs/ni-yinki100-ios/uikit/uibarbuttonitemno-she-zhi
-
-navigationbar
-http://qiita.com/mochizukikotaro/items/f053495eb130e92e13e8
-
-*/
-
 import UIKit
 
 //import Alamofire
 //import SwiftyJSON
-
-
 
 class TabViewControllerBase: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var tabBarTitle: String = ""
