@@ -1,0 +1,14 @@
+
+"LANG_VIEW1_TITLE" = "Googleトレンド/数時間毎更新";
+"LANG_VIEW1_URL" = "https://checktrend-rails.herokuapp.com/api/trend/google.json";
+
+"LANG_VIEW2_TITLE" = "Yahoo!急上昇 / 毎日更新";
+"LANG_VIEW2_URL" = "https://checktrend-rails.herokuapp.com/api/trend/yahoo.json";
+
+"LANG_VIEW3_TITLE" = "twitterトレンド";
+"LANG_VIEW3_URL" = "https://checktrend-rails.herokuapp.com/api/trend/twitter.json";
+
+"LANG_VIEW4_TITLE" = "Amazon 24時間ヒット書籍";
+"LANG_VIEW4_URL" = "https://checktrend-rails.herokuapp.com/api/trend/amazon.json";
+
+"BACK_BUTTON_TITLE" = "戻る";

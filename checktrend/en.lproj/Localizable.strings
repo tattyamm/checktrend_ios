@@ -1,0 +1,14 @@
+
+"LANG_VIEW1_TITLE" = "GoogleTrends(every hours)";
+"LANG_VIEW1_URL" = "https://checktrend.herokuapp.com/api/trend/google.json?from=ja&to=en";
+
+"LANG_VIEW2_TITLE" = "Yahoo! (almost every day)";
+"LANG_VIEW2_URL" = "https://checktrend.herokuapp.com/api/trend/yahoo.json?from=ja&to=en";
+
+"LANG_VIEW3_TITLE" = "twitter trend";
+"LANG_VIEW3_URL" = "https://checktrend.herokuapp.com/api/trend/twitter.json?from=ja&to=en";
+
+"LANG_VIEW4_TITLE" = "books (past 24 hours)";
+"LANG_VIEW4_URL" = "https://checktrend.herokuapp.com/api/trend/amazon.json?from=ja&to=en";
+
+"BACK_BUTTON_TITLE" = "Back";
