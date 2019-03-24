@@ -1,0 +1,17 @@
+
+"LANG_VIEW1_TITLE" = "GoogleTrends(every hours)";
+"LANG_VIEW1_URL" = "https://checktrend-rails.herokuapp.com/api/trend/google.json";
+
+"LANG_VIEW2_TITLE" = "Youtube (almost every day)";
+"LANG_VIEW2_URL" = "https://checktrend-rails.herokuapp.com/api/trend/youtube.json";
+
+"LANG_VIEW3_TITLE" = "twitter trend";
+"LANG_VIEW3_URL" = "https://checktrend-rails.herokuapp.com/api/trend/twitter.json";
+
+"LANG_VIEW4_TITLE" = "books (past 24 hours)";
+"LANG_VIEW4_URL" = "https://checktrend-rails.herokuapp.com/api/trend/amazon.json";
+
+"BACK_BUTTON_TITLE" = "Back";
+
+"MESSAGE_LOADING_ERROR" = "Network error.";
+

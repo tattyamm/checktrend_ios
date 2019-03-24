@@ -1,4 +1,4 @@
-github "Alamofire/Alamofire"
-github "SwiftyJSON/SwiftyJSON"
-github "SVProgressHUD/SVProgressHUD"
+github "Alamofire/Alamofire" "4.8.1"
+github "SwiftyJSON/SwiftyJSON" ~> 4.0
+github "Krimpedance/KRProgressHUD"
 
