@@ -3,16 +3,6 @@
 ## 概要
 * チェックトレンドのiOS(swift)版です。
 * [blog](http://blog.livedoor.jp/tattyamm/archives/5077201.html)
-* Cartfileにより各ライブラリの導入が必要です。
-
-```
-carthage update --platform iOS
-```
-
-* 使用ライブラリ
-    * Alamofire
-    * SwifyJSON
-    * KRProgressHUD
 
 ## 各URL
 * [iOS](http://itunes.apple.com/jp/app/id397153166?mt=8)
