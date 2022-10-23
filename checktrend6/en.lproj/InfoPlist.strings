@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  checktrend6
+
+  Created by Tatsuya Endou on 2022/10/10.
+  
+*/
+
+CFBundleDisplayName = "CheckTrendJ";
+

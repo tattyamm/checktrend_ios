@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  checktrend6
+
+  Created by Tatsuya Endou on 2022/10/10.
+  
+*/
+
+"LANG_VIEW1_TITLE" = "検索トレンド(Googleトレンドより)";
+"LANG_VIEW1_URL" = "https://checktrend-rails.fly.dev/api/trend/google.json";
+
+"LANG_VIEW2_TITLE" = "SNSトレンド(Twitterトレンドより)";
+"LANG_VIEW2_URL" = "https://checktrend-rails.fly.dev/api/trend/twitter.json";
+
+"LANG_VIEW3_TITLE" = "書籍トレンド(楽天ブックスより)";
+"LANG_VIEW3_URL" = "https://checktrend-rails.fly.dev/api/trend/rakuten.json";
+
+"LANG_VIEW4_TITLE" = "動画トレンド(Youtubeより)";
+"LANG_VIEW4_URL" = "https://checktrend-rails.fly.dev/api/trend/youtube.json";
+
+"MESSAGE_LOADING" = "ロード中...";
+"MESSAGE_ERROR" = "読み込みに失敗しました";
+
