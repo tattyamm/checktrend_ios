@@ -1,10 +1,3 @@
-//
-//  TabPage4.swift
-//  checktrend6
-//
-//  Created by Tatsuya Endou on 2022/10/08.
-//
-
 import SwiftUI
 
 struct ApiJson: Decodable {

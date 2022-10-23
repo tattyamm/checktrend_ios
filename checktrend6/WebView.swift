@@ -1,10 +1,3 @@
-//
-//  WebView.swift
-//  checktrend6
-//
-//  Created by Tatsuya Endou on 2022/10/02.
-//
-
 //https://www.hfoasi8fje3.work/entry/2020/12/29/%E3%80%90SwiftUI%E3%80%91WKWebView%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B
 //https://www.hfoasi8fje3.work/entry/2021/04/22/%E3%80%90SwiftUI%E3%80%91WKWebView%E5%86%85%E3%81%AE%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF%E7%8A%B6%E6%B3%81%E3%82%92UIProgressView%E3%81%A7%E8%A1%A8%E7%A4%BA%E3%81%99
 import SwiftUI
