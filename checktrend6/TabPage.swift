@@ -46,7 +46,7 @@ struct TabPage: View {
                     Button {
                         articles = [TrendItems(id:"loading", title:NSLocalizedString("MESSAGE_LOADING", comment: ""), link:"", pubDate:"", description: "")]
                         Task {
-                            await fetchQiitaArticles()
+                            await getArticles()
                         }
                     } label: {
                         Image(systemName: "arrow.clockwise") //https://hotpot.ai/free-icons?s=sfSymbols
@@ -56,12 +56,12 @@ struct TabPage: View {
             }
         }
         .task {
-            await fetchQiitaArticles()
+            await getArticles()
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
     
-    func fetchQiitaArticles() async {
+    func getArticles() async {
         do {
             guard let url = URL(string: sourceUrl) else { return }
             let (data, _) = try await URLSession.shared.data(from: url)

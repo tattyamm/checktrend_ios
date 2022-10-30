@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		665FD84928E9C42800C2088A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665FD84828E9C42800C2088A /* WebView.swift */; };
 		665FD85128F2FABB00C2088A /* TabPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665FD85028F2FABB00C2088A /* TabPage.swift */; };
-		665FD85328F3152600C2088A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665FD85228F3152600C2088A /* DetailView.swift */; };
 		665FD85628F41AC500C2088A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 665FD85828F41AC500C2088A /* Localizable.strings */; };
 		667E8E5128D898E200105A88 /* checktrend6App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667E8E5028D898E200105A88 /* checktrend6App.swift */; };
 		667E8E5328D898E200105A88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667E8E5228D898E200105A88 /* ContentView.swift */; };
@@ -19,6 +18,7 @@
 		667E8E6C28D898E400105A88 /* checktrend6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667E8E6B28D898E400105A88 /* checktrend6UITests.swift */; };
 		667E8E6E28D898E400105A88 /* checktrend6UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667E8E6D28D898E400105A88 /* checktrend6UITestsLaunchTests.swift */; };
 		66955A3728F466E6003D15E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66955A3928F466E6003D15E8 /* InfoPlist.strings */; };
+		66CB54C3290EBF7B00FF7E7F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CB54C2290EBF7B00FF7E7F /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 /* Begin PBXFileReference section */
 		665FD84828E9C42800C2088A /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		665FD85028F2FABB00C2088A /* TabPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPage.swift; sourceTree = "<group>"; };
-		665FD85228F3152600C2088A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailView.swift; path = ../../../../Desktop/DetailView.swift; sourceTree = "<group>"; };
 		665FD85728F41AC500C2088A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		665FD85928F41ACE00C2088A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		667E8E4D28D898E200105A88 /* checktrend6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = checktrend6.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +55,7 @@
 		667E8E6D28D898E400105A88 /* checktrend6UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checktrend6UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		66955A3828F466E6003D15E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		66955A3A28F466E9003D15E8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		66CB54C2290EBF7B00FF7E7F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +112,7 @@
 				667E8E5628D898E400105A88 /* Preview Content */,
 				665FD85028F2FABB00C2088A /* TabPage.swift */,
 				665FD84828E9C42800C2088A /* WebView.swift */,
-				665FD85228F3152600C2088A /* DetailView.swift */,
+				66CB54C2290EBF7B00FF7E7F /* DetailView.swift */,
 				665FD85828F41AC500C2088A /* Localizable.strings */,
 				66955A3928F466E6003D15E8 /* InfoPlist.strings */,
 			);
@@ -280,7 +280,7 @@
 				665FD84928E9C42800C2088A /* WebView.swift in Sources */,
 				667E8E5328D898E200105A88 /* ContentView.swift in Sources */,
 				667E8E5128D898E200105A88 /* checktrend6App.swift in Sources */,
-				665FD85328F3152600C2088A /* DetailView.swift in Sources */,
+				66CB54C3290EBF7B00FF7E7F /* DetailView.swift in Sources */,
 				665FD85128F2FABB00C2088A /* TabPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
